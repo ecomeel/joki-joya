@@ -34,9 +34,10 @@
 <style lang="scss" scoped>
 .header {
   padding: 9px 6px 9px 16px;
-  position: relative;
+  position: absolute;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
 
   &__container {
     display: flex;
@@ -56,7 +57,7 @@
   column-gap: 16px;
 }
 .contact {
-  padding: 8px 16px;
+  padding: 6px 16px;
   display: flex;
   align-items: center;
   column-gap: 8px;
