@@ -1,0 +1,13 @@
+@import './reset';
+@import './fonts';
+
+body, html {
+  font-family: 'DrukCyr', sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1216px;
+}
