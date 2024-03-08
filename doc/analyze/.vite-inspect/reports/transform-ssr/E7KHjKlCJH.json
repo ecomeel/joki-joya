@@ -1,0 +1,276 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue?vue&type=style&index=0&scoped=549dd298&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.vertical {\n  width: 73px;\n}\n.item, .vertical {\n  display: flex;\n  flex-direction: column-reverse;\n  row-gap: 40px;\n}\n.item {\n  align-items: center;\n}\np {\n  font-size: 84px;\n  line-height: 84px;\n  color: #fff;\n  -webkit-text-stroke: 1.5px #000000;\n  transform: rotate(180deg);\n  writing-mode: vertical-rl;\n  text-transform: uppercase;\n}\nimg {\n  width: 73px;\n  height: 64px;\n}\n",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue"
+        ],
+        "names": [],
+        "mappings": ";AAsCA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACR,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACb;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACf;AACA,CAAC,CAAC,CAAC,CAAC,EAAE;EACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB;AACA,EAAE;EACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B;AACA,CAAC,CAAC,EAAE;EACF,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACd",
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<script>\nimport { ref } from \"vue\";\nexport default {\n  setup() {\n    const celebrations = [\"quests\", \"jjshow\", \"birthday\", \"celebrate\", \"jshow\"];\n\n    return {\n      celebrations,\n    };\n  },\n};\n</script>\n<template>\n  <div class=\"vertical\">\n    <!-- <h1 class=\"item\" v-for=\"celebrate in celebrations\">{{ celebrate }}</h1> -->\n    <div class=\"item\" v-for=\"celebrate in celebrations\">\n      <p>{{ celebrate }}</p>\n      <svg\n        width=\"72.000000\"\n        height=\"64.000000\"\n        viewBox=\"0 0 72 64\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n      >\n        <defs />\n        <path\n          id=\"✽\"\n          d=\"M72 32.1C72 28.6 68.7182 25.9 64.0442 25.9C61.7569 25.9 58.0773 26.8 52.9061 28.5C47.7348 30.2 42.9613 31.1 38.6851 31.1L37.3923 31.1C40.1768 26.7 42.4641 23.7 44.0552 22.3C47.337 19.4 56.6851 11.8 56.6851 5.90002C56.6851 2.40002 54.1989 0 51.2155 0C49.5249 0 48.0331 0.700012 46.5414 2.09998C43.6575 4.90002 42.2652 11.1 40.674 18.4C39.8785 22.1 38.3867 26 36 30.3C33.6133 25.9 32.0221 21.9 31.2265 18.1C30.4309 14.4 29.6354 11.1 28.7403 8.29999C26.8508 2.5 23.9669 0 20.5856 0C17.5028 0 15.3149 2.40002 15.3149 5.59998C15.3149 7.59998 15.9116 9.5 17.2044 11.4C18.3978 13.2 21.5801 16.5 26.7514 21.2C31.4254 26.1 31.0276 25.4 34.6077 31.1C29.8343 31.1 24.7624 30.2 19.4917 28.4C14.221 26.6 10.3425 25.7 7.9558 25.7C3.18232 25.7 0 28.4 0 31.9C0 35.5 3.38121 38.1 7.9558 38.1C11.4365 38.1 18.895 35.6 23.6685 34C26.0552 33.2 29.337 32.9 33.3149 32.9L34.6077 32.9C32.221 36.9 29.7348 40 27.2486 42.2C22.2762 46.6 15.3149 52.8 15.3149 58.1C15.3149 61.6 17.6022 64 20.5856 64C22.2762 64 23.8674 63.3 25.3591 62C28.3425 59.4 29.6354 53.4 31.2265 45.9C32.0221 42.1 33.6133 38 36 33.7C38.3867 37.9 39.9779 41.9 40.674 45.5C41.3702 49.2 42.2652 52.5 43.0608 55.4C44.6519 61.3 47.9337 64 51.2155 64C54.1989 64 56.6851 61.4 56.6851 58.2C56.6851 53 51.2155 48.1 45.6464 43.1C42.8619 40.6 40.0773 37.3 37.3923 32.9C42.5635 32.9 47.5359 33.8 52.7072 35.6C57.779 37.4 61.558 38.3 64.0442 38.3C68.5193 38.3 72 35.8 72 32.1Z\"\n          fill=\"#000000\"\n          fill-opacity=\"1.000000\"\n          fill-rule=\"nonzero\"\n        />\n      </svg>\n    </div>\n  </div>\n</template>\n<style lang=\"scss\" scoped>\n.vertical {\n  width: 73px;\n}\n.item, .vertical {\n  display: flex;\n  flex-direction: column-reverse;\n  row-gap: 40px;\n}\n.item {\n  align-items: center;\n}\np {\n  font-size: 84px;\n  line-height: 84px;\n  color: #fff;\n  -webkit-text-stroke: 1.5px #000000;\n  transform: rotate(180deg);\n  writing-mode: vertical-rl;\n  text-transform: uppercase;\n}\nimg {\n  width: 73px;\n  height: 64px;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709928258371,
+      "end": 1709928258371,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".vertical{width:73px}.item,.vertical{display:flex;flex-direction:column-reverse;row-gap:40px}.item{align-items:center}p{color:#fff;font-size:84px;line-height:84px;-webkit-text-stroke:1.5px #000;text-transform:uppercase;transform:rotate(180deg);writing-mode:vertical-rl}img{height:64px;width:73px}",
+      "start": 1709928258371,
+      "end": 1709928258380,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue",
+        "mappings": "AACA,UACE,WAEF,gBACE,aACA,8BACA,aAEF,MACE,mBAEF,EAGE,WAFA,eACA,iBAEA,+BAGA,yBAFA,yBACA,yBAGF,IAEE,YADA",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".vertical[data-v-549dd298]{width:73px}.item[data-v-549dd298],.vertical[data-v-549dd298]{display:flex;flex-direction:column-reverse;row-gap:40px}.item[data-v-549dd298]{align-items:center}p[data-v-549dd298]{color:#fff;font-size:84px;line-height:84px;-webkit-text-stroke:1.5px #000;text-transform:uppercase;transform:rotate(180deg);writing-mode:vertical-rl}img[data-v-549dd298]{height:64px;width:73px}",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue",
+        "mappings": "AAAA,2BAAU,UAAU,CAAC,kDAAgB,YAAY,CAAC,6BAA6B,CAAC,YAAY,CAAC,uBAAM,kBAAkB,CAAC,mBAAE,UAAU,CAAC,cAAc,CAAC,gBAAgB,CAAC,8BAA8B,CAAC,wBAAwB,CAAC,wBAAwB,CAAC,wBAAwB,CAAC,qBAAI,WAAW,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258380,
+      "end": 1709928258380,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709928258380,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709928258381,
+      "end": 1709928258381,
+      "order": "normal"
+    }
+  ]
+}

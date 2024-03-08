@@ -1,0 +1,255 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/assets/styles/commons.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "@import \"./reset\";\n@import \"./fonts\";\n\nbody,\nhtml {\n  font-family: \"DrukCyr\", sans-serif;\n  height: 100%;\n  width: 100%;\n  font-size: 22px;\n  line-height: 24px;\n  letter-spacing: 0.03em;\n  background-image: url(\"https://s3-alpha-sig.figma.com/img/39b7/2231/00ee4bbbd9fd0a4be5d034d3e14325d6?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NGqoU8V~jeWcC8F5OOMMAZ45u8nvUaVpcCW3DfIX4Ocjdg5o8Hf-oHs-BNuFBE6LEoSDTbHRVHbsW7zo659OdTKbTSzpj0~DY6epDxaBAHaWZqIDW~BU~JwYrUsOxw1zHZ1fzUM7fhc6nthHnV0yy9dh-hISH7x8KxdCoyV9OABVNfOfPymm-9WHXTd0aD-I98lvL3NymACHTAkoi1uaNZYiBgYAt7Oyo3AAAp2iNHb9t-~6QOXW3MEQSX3Rwwz4-hnCFTw-tD2n8vqcbTo1eEgFYhuFwYtR17fxA1JctorQNmlk1KKow8TIymXsq-0tqaenqYRiHoxfgO16Qh7UhA__\");\n  background-size: cover;\n  background-position: 50% 50%;\n}\n.container {\n  margin: 0 auto;\n  max-width: 1216px;\n}\n",
+      "start": 1709928258115,
+      "end": 1709928258164,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709928258164,
+      "end": 1709928258164,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709928258164,
+      "end": 1709928258164,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709928258164,
+      "end": 1709928258164,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709928258164,
+      "end": 1709928258164,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709928258164,
+      "end": 1709928258164,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;box-sizing:border-box;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:\"\";content:none}table{border-collapse:collapse;border-spacing:0}a{color:inherit;text-decoration:none}button{cursor:pointer}button,input{font:inherit}@font-face{font-family:DrukCyr;src:url(__VITE_ASSET__DiQHAfc3__)}@font-face{font-family:DrukWideCyr;src:url(__VITE_ASSET__C3uohVgC__),url(__VITE_ASSET__DzLgbADO__),url(__VITE_ASSET__BsgoE$Tb__),url(__VITE_ASSET__Dc8wlSVv__),url(__VITE_ASSET__ChwP$Op3__)}@font-face{font-family:Montserrat Bold;src:url(__VITE_ASSET__BoT1o9xn__)}@font-face{font-family:NunitoSans;font-weight:bolder;src:url(__VITE_ASSET__BEBmIFhN__)}@font-face{font-family:NunitoSans;font-weight:700;src:url(__VITE_ASSET__D0QFGQau__)}@font-face{font-family:NunitoSans;font-weight:400;src:url(__VITE_ASSET__Cz8yAcsH__)}@font-face{font-family:NunitoSans;font-weight:lighter;src:url(__VITE_ASSET__BmoP6VWY__)}body,html{background-image:url(https://s3-alpha-sig.figma.com/img/39b7/2231/00ee4bbbd9fd0a4be5d034d3e14325d6?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NGqoU8V~jeWcC8F5OOMMAZ45u8nvUaVpcCW3DfIX4Ocjdg5o8Hf-oHs-BNuFBE6LEoSDTbHRVHbsW7zo659OdTKbTSzpj0~DY6epDxaBAHaWZqIDW~BU~JwYrUsOxw1zHZ1fzUM7fhc6nthHnV0yy9dh-hISH7x8KxdCoyV9OABVNfOfPymm-9WHXTd0aD-I98lvL3NymACHTAkoi1uaNZYiBgYAt7Oyo3AAAp2iNHb9t-~6QOXW3MEQSX3Rwwz4-hnCFTw-tD2n8vqcbTo1eEgFYhuFwYtR17fxA1JctorQNmlk1KKow8TIymXsq-0tqaenqYRiHoxfgO16Qh7UhA__);background-position:50% 50%;background-size:cover;font-family:DrukCyr,sans-serif;font-size:22px;height:100%;letter-spacing:.03em;line-height:24px;width:100%}.container{margin:0 auto;max-width:1216px}",
+      "start": 1709928258164,
+      "end": 1709928258260,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/assets/styles/commons.scss",
+        "mappings": "AAAA,2ZAgBC,SAHG,sBAIH,eACA,aAJA,SACA,UAIA,wBAGD,8EAEC,cAED,KACC,cAED,MACC,gBAED,aACC,YAED,oDAEC,WACA,aAED,MACC,yBACA,iBAED,EAEI,cADA,qBAIJ,OACC,eAGD,aACC,aCtDD,WACE,oBACA,kCAEF,WACE,wBACA,0JAOF,WACE,4BACA,kCAEF,WACE,uBAEA,mBADA,kCAGF,WACE,uBAEA,gBADA,kCAGF,WACE,uBAEA,gBADA,kCAGF,WACE,uBAEA,oBADA,kCC/BF,UAQE,2fAEA,4BADA,sBAPA,+BAGA,eAFA,YAIA,qBADA,iBAFA,WAQF,WACE,cACA",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/assets/styles/_reset.scss",
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/assets/styles/_fonts.scss",
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/assets/styles/commons.scss"
+        ],
+        "sourcesContent": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;box-sizing:border-box;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:\\\"\\\";content:none}table{border-collapse:collapse;border-spacing:0}a{color:inherit;text-decoration:none}button{cursor:pointer}button,input{font:inherit}@font-face{font-family:DrukCyr;src:url(__VITE_ASSET__DiQHAfc3__)}@font-face{font-family:DrukWideCyr;src:url(__VITE_ASSET__C3uohVgC__),url(__VITE_ASSET__DzLgbADO__),url(__VITE_ASSET__BsgoE$Tb__),url(__VITE_ASSET__Dc8wlSVv__),url(__VITE_ASSET__ChwP$Op3__)}@font-face{font-family:Montserrat Bold;src:url(__VITE_ASSET__BoT1o9xn__)}@font-face{font-family:NunitoSans;font-weight:bolder;src:url(__VITE_ASSET__BEBmIFhN__)}@font-face{font-family:NunitoSans;font-weight:700;src:url(__VITE_ASSET__D0QFGQau__)}@font-face{font-family:NunitoSans;font-weight:400;src:url(__VITE_ASSET__Cz8yAcsH__)}@font-face{font-family:NunitoSans;font-weight:lighter;src:url(__VITE_ASSET__BmoP6VWY__)}body,html{background-image:url(https://s3-alpha-sig.figma.com/img/39b7/2231/00ee4bbbd9fd0a4be5d034d3e14325d6?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NGqoU8V~jeWcC8F5OOMMAZ45u8nvUaVpcCW3DfIX4Ocjdg5o8Hf-oHs-BNuFBE6LEoSDTbHRVHbsW7zo659OdTKbTSzpj0~DY6epDxaBAHaWZqIDW~BU~JwYrUsOxw1zHZ1fzUM7fhc6nthHnV0yy9dh-hISH7x8KxdCoyV9OABVNfOfPymm-9WHXTd0aD-I98lvL3NymACHTAkoi1uaNZYiBgYAt7Oyo3AAAp2iNHb9t-~6QOXW3MEQSX3Rwwz4-hnCFTw-tD2n8vqcbTo1eEgFYhuFwYtR17fxA1JctorQNmlk1KKow8TIymXsq-0tqaenqYRiHoxfgO16Qh7UhA__);background-position:50% 50%;background-size:cover;font-family:DrukCyr,sans-serif;font-size:22px;height:100%;letter-spacing:.03em;line-height:24px;width:100%}.container{margin:0 auto;max-width:1216px}\"",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709928258260,
+      "end": 1709928258260,
+      "order": "normal"
+    }
+  ]
+}
