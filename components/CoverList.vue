@@ -29,8 +29,7 @@
     height: 616px;
     object-fit: cover;
     object-position: center center;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    border-radius: 32px;
   }
 }
 .title-wrapper {
@@ -48,6 +47,7 @@
   &_blue {
     color: #0267ff;
     position: relative;
+    z-index: 2;
 
     &::before {
       content: "JOKI JOYA";

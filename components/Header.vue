@@ -36,8 +36,8 @@
   padding: 9px 6px 9px 16px;
   position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.811);
+  backdrop-filter: blur(4px);
 
   &__container {
     display: flex;
@@ -53,6 +53,7 @@
   background-position: center center;
 }
 .contacts {
+  margin-left: -5px;
   display: flex;
   column-gap: 16px;
 }
@@ -78,6 +79,7 @@
   line-height: 16px;
 }
 .take-order {
+  margin-left: -5px;
   display: flex;
   column-gap: 16px;
 }
@@ -86,7 +88,7 @@
   border: none;
   border-radius: 30px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 
   &_pink {
     background-color: #f269af;
@@ -101,6 +103,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+  
   row-gap: 5px;
   position: absolute;
   top: 15px;

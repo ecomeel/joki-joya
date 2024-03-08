@@ -1,11 +1,17 @@
-@import './reset';
-@import './fonts';
+@import "./reset";
+@import "./fonts";
 
-body, html {
-  font-family: 'DrukCyr', sans-serif;
+body,
+html {
+  font-family: "DrukCyr", sans-serif;
+  height: 100%;
+  width: 100%;
   font-size: 22px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  background-image: url("https://s3-alpha-sig.figma.com/img/39b7/2231/00ee4bbbd9fd0a4be5d034d3e14325d6?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NGqoU8V~jeWcC8F5OOMMAZ45u8nvUaVpcCW3DfIX4Ocjdg5o8Hf-oHs-BNuFBE6LEoSDTbHRVHbsW7zo659OdTKbTSzpj0~DY6epDxaBAHaWZqIDW~BU~JwYrUsOxw1zHZ1fzUM7fhc6nthHnV0yy9dh-hISH7x8KxdCoyV9OABVNfOfPymm-9WHXTd0aD-I98lvL3NymACHTAkoi1uaNZYiBgYAt7Oyo3AAAp2iNHb9t-~6QOXW3MEQSX3Rwwz4-hnCFTw-tD2n8vqcbTo1eEgFYhuFwYtR17fxA1JctorQNmlk1KKow8TIymXsq-0tqaenqYRiHoxfgO16Qh7UhA__");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .container {
   margin: 0 auto;
