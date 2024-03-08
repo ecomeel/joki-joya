@@ -12,8 +12,9 @@
 </template>
 <style lang="scss">
   .blur {
-    height: 100vh;
-    background-color: rgba($color: #ffffffd2, $alpha: .2);
-    backdrop-filter: blur(10px);
+    height: 100%;
+    background-color: rgba($color: #f8f8f8, $alpha: .7);
+
+    // backdrop-filter: blur(20px);
   }
 </style>

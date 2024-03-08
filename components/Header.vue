@@ -1,5 +1,4 @@
-<script>
-</script>
+<script></script>
 <template>
   <header class="header">
     <div class="logo"></div>
@@ -34,10 +33,22 @@
 <style lang="scss" scoped>
 .header {
   padding: 9px 6px 9px 16px;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 20;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.811);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid pink;
+  border-image: linear-gradient(
+    224.14deg,
+    rgb(253, 243, 152) -1.136%,
+    rgb(247, 190, 135) 22.241%,
+    rgb(229, 99, 125) 44.972%,
+    rgb(232, 75, 186) 65.177%,
+    rgb(147, 16, 216) 98.333%
+  );
+  border-image-slice: 1;
 
   &__container {
     display: flex;
@@ -103,7 +114,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  
+
   row-gap: 5px;
   position: absolute;
   top: 15px;
