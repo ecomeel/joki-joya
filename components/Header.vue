@@ -53,6 +53,14 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1340px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @media (max-width: 565px) {
+      justify-content: center;
+    }
   }
 }
 .logo {
@@ -67,6 +75,10 @@
   margin-left: -5px;
   display: flex;
   column-gap: 16px;
+
+  @media (max-width: 565px) {
+    display: none;
+  }
 }
 .contact {
   padding: 6px 16px;
@@ -75,6 +87,12 @@
   column-gap: 8px;
   border: 2px solid #5834a4;
   border-radius: 30px;
+
+  &:first-child {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
   & img {
     height: 18px;
@@ -107,13 +125,17 @@
   }
   &_green {
     background-color: #abec20;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 .menu {
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 
   row-gap: 5px;
   position: absolute;

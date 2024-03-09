@@ -61,10 +61,12 @@ const facts = [
     picture: boyImg,
     buttonText: "подробнее",
   },
-]
+];
 </script>
 <template>
   <section class="facts">
+    <h3 class="facts__title">jj \\\ facts</h3>
+
     <Fact
       v-for="fact in facts"
       :title="fact.title"
@@ -82,9 +84,18 @@ const facts = [
   width: 1040px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
-  // & > * {
-  //   flex: 1 0 33%;
-  // }
+  &__title {
+    font-family: 'DrukWideCyr', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
 }
 </style>
