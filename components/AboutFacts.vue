@@ -81,13 +81,28 @@ const facts = [
 <style lang="scss" scoped>
 .facts {
   margin-top: 110px;
-  width: 1040px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 70px;
+  }
+
+  & > * {
+    flex: 0 1 33%;
+
+    @media (max-width: 1024px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 768px) {
+      flex: 0 1 100%;
+    }
+  }
 
   &__title {
-    font-family: 'DrukWideCyr', sans-serif;
+    font-family: "DrukWideCyr", sans-serif;
     font-size: 11px;
     line-height: 16px;
     text-transform: uppercase;
@@ -96,6 +111,10 @@ const facts = [
     left: -25px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+    @media (max-width: 440px) {
+      display: none;
+    }
   }
 }
 </style>

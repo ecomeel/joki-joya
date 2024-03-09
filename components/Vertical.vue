@@ -1,5 +1,4 @@
 <script>
-import { ref } from "vue";
 export default {
   setup() {
     const celebrations = ["quests", "jjshow", "birthday", "celebrate", "jshow"];
@@ -12,7 +11,6 @@ export default {
 </script>
 <template>
   <div class="vertical">
-    <!-- <h1 class="item" v-for="celebrate in celebrations">{{ celebrate }}</h1> -->
     <div class="item" v-for="celebrate in celebrations">
       <p>{{ celebrate }}</p>
       <svg
@@ -38,14 +36,27 @@ export default {
 <style lang="scss" scoped>
 .vertical {
   width: 73px;
+  @media (max-width: 1024px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+  @media (max-width: 568px) {
+    width: 40px;
+  }
 }
-.item, .vertical {
+.item,
+.vertical {
   display: flex;
   flex-direction: column-reverse;
   row-gap: 40px;
 }
 .item {
   align-items: center;
+  @media (max-width: 1024px) {
+    justify-content: space-between;
+  }
 }
 p {
   font-size: 84px;
@@ -55,9 +66,24 @@ p {
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  @media (max-width: 568px) {
+    font-size: 50px;
+    line-height: 56px;
+  }
 }
-img {
-  width: 73px;
-  height: 64px;
+svg {
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 56px;
+  }
+  @media (max-width: 568px) {
+    width: 40px;
+    height: 36px;
+  }
 }
 </style>

@@ -4,38 +4,38 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-d566d123\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"src\"]\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = [\"src\"]\nconst _hoisted_5 = { class: \"fact__title\" }\nconst _hoisted_6 = { class: \"fact__desc\" }\nconst _hoisted_7 = [\"src\"]\nconst _hoisted_8 = { class: \"fact__button-wrapper\" }\n\n\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\n\nexport interface IFact {\n  title: string;\n  description: string;\n  background: string;\n  picture: string;\n  theme?: string;\n  buttonText: string\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Fact',\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nlet plus;\nif (props.theme) {\n  plus = plusWhite;\n} else {\n  plus = plusBlack;\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    style: _normalizeStyle({ backgroundColor: _ctx.background }),\n    class: \"fact\"\n  }, [\n    _createElementVNode(\"img\", {\n      class: \"fact__plus fact__plus_top-left\",\n      src: _unref(plus)\n    }, null, 8, _hoisted_1),\n    _createElementVNode(\"img\", {\n      class: \"fact__plus fact__plus_top-right\",\n      src: _unref(plus)\n    }, null, 8, _hoisted_2),\n    _createElementVNode(\"img\", {\n      class: \"fact__plus fact__plus_bot-left\",\n      src: _unref(plus)\n    }, null, 8, _hoisted_3),\n    _createElementVNode(\"img\", {\n      class: \"fact__plus fact__plus_bot-right\",\n      src: _unref(plus)\n    }, null, 8, _hoisted_4),\n    _createElementVNode(\"div\", {\n      class: _normalizeClass([{'white': _ctx.theme}, 'fact__head'])\n    }, [\n      _createElementVNode(\"p\", _hoisted_5, _toDisplayString(_ctx.title), 1),\n      _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_ctx.description), 1)\n    ], 2),\n    _createElementVNode(\"img\", {\n      class: \"fact__image\",\n      src: _ctx.picture\n    }, null, 8, _hoisted_7),\n    _createElementVNode(\"div\", _hoisted_8, [\n      _createVNode(_component_ButtonArrow, {\n        text: _ctx.buttonText,\n        theme: _ctx.theme\n      }, null, 8, [\"text\", \"theme\"])\n    ])\n  ], 4))\n}\n}\n\n})",
-      "start": 1709999963761,
-      "end": 1709999963761
+      "start": 1710017374127,
+      "end": 1710017374127
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709999963761,
-      "end": 1709999963761,
+      "start": 1710017374127,
+      "end": 1710017374127,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709999963761,
-      "end": 1709999963761,
+      "start": 1710017374127,
+      "end": 1710017374127,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709999963761,
-      "end": 1709999963761,
+      "start": 1710017374127,
+      "end": 1710017374127,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709999963761,
-      "end": 1709999963761,
+      "start": 1710017374127,
+      "end": 1710017374127,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d566d123\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"src\"];\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = [\"src\"];\nconst _hoisted_5 = { class: \"fact__title\" };\nconst _hoisted_6 = { class: \"fact__desc\" };\nconst _hoisted_7 = [\"src\"];\nconst _hoisted_8 = { class: \"fact__button-wrapper\" };\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _cache) => {\n      const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        style: _normalizeStyle({ backgroundColor: _ctx.background }),\n        class: \"fact\"\n      }, [\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_top-left\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_1),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_top-right\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_2),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_bot-left\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_3),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_bot-right\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_4),\n        _createElementVNode(\"div\", {\n          class: _normalizeClass([{ \"white\": _ctx.theme }, \"fact__head\"])\n        }, [\n          _createElementVNode(\"p\", _hoisted_5, _toDisplayString(_ctx.title), 1),\n          _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_ctx.description), 1)\n        ], 2),\n        _createElementVNode(\"img\", {\n          class: \"fact__image\",\n          src: _ctx.picture\n        }, null, 8, _hoisted_7),\n        _createElementVNode(\"div\", _hoisted_8, [\n          _createVNode(_component_ButtonArrow, {\n            text: _ctx.buttonText,\n            theme: _ctx.theme\n          }, null, 8, [\"text\", \"theme\"])\n        ])\n      ], 4);\n    };\n  }\n});\n",
-      "start": 1709999963763,
-      "end": 1709999963787,
+      "start": 1710017374128,
+      "end": 1710017374143,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,159 +51,159 @@
     },
     {
       "name": "vite:json",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709999963787,
-      "end": 1709999963787,
+      "start": 1710017374143,
+      "end": 1710017374143,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709999963787,
-      "end": 1709999963788,
+      "start": 1710017374143,
+      "end": 1710017374144,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d566d123\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"src\"];\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = [\"src\"];\nconst _hoisted_5 = { class: \"fact__title\" };\nconst _hoisted_6 = { class: \"fact__desc\" };\nconst _hoisted_7 = [\"src\"];\nconst _hoisted_8 = { class: \"fact__button-wrapper\" };\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _cache) => {\n      const _component_ButtonArrow = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        style: _normalizeStyle({ backgroundColor: _ctx.background }),\n        class: \"fact\"\n      }, [\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_top-left\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_1),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_top-right\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_2),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_bot-left\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_3),\n        _createElementVNode(\"img\", {\n          class: \"fact__plus fact__plus_bot-right\",\n          src: _unref(plus)\n        }, null, 8, _hoisted_4),\n        _createElementVNode(\"div\", {\n          class: _normalizeClass([{ \"white\": _ctx.theme }, \"fact__head\"])\n        }, [\n          _createElementVNode(\"p\", _hoisted_5, _toDisplayString(_ctx.title), 1),\n          _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_ctx.description), 1)\n        ], 2),\n        _createElementVNode(\"img\", {\n          class: \"fact__image\",\n          src: _ctx.picture\n        }, null, 8, _hoisted_7),\n        _createElementVNode(\"div\", _hoisted_8, [\n          _createVNode(_component_ButtonArrow, {\n            text: _ctx.buttonText,\n            theme: _ctx.theme\n          }, null, 8, [\"text\", \"theme\"])\n        ])\n      ], 4);\n    };\n  }\n});\n",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709999963788,
-      "end": 1709999963788,
+      "start": 1710017374144,
+      "end": 1710017374144,
       "order": "normal"
     }
   ]

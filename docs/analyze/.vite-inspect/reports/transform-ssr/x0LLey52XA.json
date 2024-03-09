@@ -1,0 +1,276 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue?vue&type=style&index=0&scoped=d7fcea50&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.infos > *:not(:first-child) {\n  margin-top: 126px;\n}\n.info {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  &__title {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    width: 160px;\n    & h3 {\n      margin-top: 10px;\n      font-family: \"DrukWideCyr\";\n      font-size: 13px;\n      line-height: 16px;\n      text-transform: uppercase;\n    }\n  }\n  &__desc {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    row-gap: 40px;\n    width: 335px;\n    font-family: \"NunitoSans\";\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: -0.01em;\n\n    & strong {\n      font-weight: bold;\n    }\n  }\n}\n",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <section class=\"infos\">\n    <div class=\"info\">\n      <div class=\"info__title\">\n        <h3>Наши<br />парки:</h3>\n        <svg\n          width=\"128.000000\"\n          height=\"128.000000\"\n          viewBox=\"0 0 128 128\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n        >\n          <defs />\n          <path\n            id=\"Vector\"\n            d=\"M64.1632 125L64.1568 125Q63.7491 124.999 63.4599 124.813Q63.0319 124.538 62.8634 123.859L62.8628 123.857Q60.421 114.059 53.547 103.079Q45.4306 89.9495 30.4627 78.7656Q17.398 68.8925 4.23813 65.277Q3.52093 65.0787 3.21917 64.6118Q3 64.2727 3 63.792Q3 63.3063 3.22384 62.9694Q3.51096 62.5371 4.16637 62.3495Q17.0124 58.6793 28.8707 50.4689Q38.4657 43.7902 45.8496 35.2089Q48.937 31.6207 51.6379 27.7Q59.7576 15.8197 62.7975 4.14148Q62.9722 3.4754 63.3994 3.198Q63.7042 3 64.1377 3Q64.5761 3 64.8843 3.20038Q65.3232 3.48578 65.4979 4.17761Q67.2577 11.197 70.9875 18.5263Q75.6681 27.5383 82.9051 35.8078Q83.0536 35.9703 83.2028 36.1321Q90.4921 44.0389 99.4148 50.44Q111.399 58.9347 123.83 62.3879Q124.505 62.5758 124.79 63.016Q125 63.3392 125 63.7984Q125 64.262 124.79 64.5916Q124.492 65.0594 123.77 65.2574Q115.847 67.4292 107.501 72.2324Q105.765 73.2493 104.073 74.3328Q96.023 79.485 88.9385 86.145Q80.3248 94.0739 74.7871 102.904Q67.8994 113.895 65.4547 123.854Q65.2881 124.536 64.8597 124.812Q64.5709 124.999 64.1632 125ZM64.1632 128C66.1829 127.997 67.8887 126.532 68.3683 124.569C69.9236 118.233 72.9125 111.545 77.3287 104.498C80.8809 98.8337 85.4379 93.4447 90.9934 88.3308C96.5489 83.1082 102.552 78.6087 108.997 74.8325C114.335 71.7604 119.52 69.5331 124.563 68.1506C126.547 67.6066 128 65.8209 128 63.7984C128 61.7759 126.586 60.0414 124.633 59.4974C116.684 57.2892 108.857 53.4555 101.164 48.0024C95.2752 43.7782 89.9373 39.0547 85.1627 33.8321C80.4969 28.5006 76.663 22.9451 73.6613 17.1656C71.2803 12.4871 69.5267 7.91083 68.4066 3.44336C67.9074 1.4657 66.1538 0 64.1377 0C62.1216 0 60.4063 1.43365 59.8943 3.38574C57.955 10.8358 54.3772 18.3753 49.1673 25.9981C43.2726 34.5553 35.9442 41.8901 27.163 48.0024C19.5274 53.2891 11.5846 57.11 3.34095 59.4653C1.39525 60.0222 0 61.7247 0 63.792C0 65.8593 1.45287 67.6194 3.44337 68.1698C11.8534 70.4803 20.257 74.8134 28.6671 81.1689C38.3379 88.3948 45.7815 96.2224 51.0042 104.671C55.4076 111.705 58.3965 118.342 59.9518 124.582C60.4377 126.539 62.1435 127.997 64.1568 128L64.1632 128Z\"\n            fill=\"#F55E1D\"\n            fill-opacity=\"1.000000\"\n            fill-rule=\"evenodd\"\n          />\n        </svg>\n      </div>\n      <p class=\"info__desc\">\n        Первый парк развлечений Joki Joya открылся в августе 2014 года\n        в Санкт-Петербурге. Сегодня бренд Joki Joya является лидером индустрии\n        детских развлечений в России и состоит из 28 парков в 3 городах:\n        17 в Москве и Московской области, 10 в Санкт-Петербурге и 1 в Твери.\n        На территории каждого парка размещено более 30 аттракционов в игровой\n        зоне, семейный ресторан с детским и взрослым меню, индивидуальные\n        банкетные комнаты для проведения праздников.\n      </p>\n      <div class=\"info__desc info__desc_last\">\n        <p>\n          Площадь парков от 2000 до 6000 квадратных метров в зависимости от ТРЦ.\n        </p>\n        <p>\n          Также Joki Joya занимается организацией праздников «под ключ»: детские\n          дни рождения, выпускные детского сада или школы, Новый Год,\n          корпоративные праздники.\n        </p>\n        <div class=\"button-wrapper\">\n          <ButtonArrow\n            text=\"Посмотреть адреса\"\n          />\n        </div>\n      </div>\n    </div>\n    <div class=\"info\">\n      <div class=\"info__title\">\n        <h3>Праздники<br />у нас:</h3>\n        <svg\n          width=\"128.000000\"\n          height=\"128.000000\"\n          viewBox=\"0 0 128 128\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n        >\n          <defs />\n          <path\n            id=\"Vector\"\n            d=\"M62.7098 49.0936C56.2141 21.8724 32.3317 1.40161 3.45443 0.0690918C2.46017 0.0231934 1.45999 0 0.454399 0C0.454399 1.00562 0.477592 2.00574 0.523468 3C1.84878 31.7211 22.105 55.5028 49.1038 62.1486C52.2466 62.9222 55.4807 63.4636 58.7869 63.7535C55.4784 64.0206 52.2409 64.5392 49.0936 65.2902C21.8724 71.7859 1.40164 95.6683 0.0690765 124.546C0.0231934 125.54 0 126.54 0 127.546L0.0317535 127.546C1.02665 127.545 2.01624 127.522 3.00004 127.477C31.721 126.151 55.5028 105.895 62.1486 78.8962C62.9222 75.7534 63.4636 72.5193 63.7536 69.2131C64.0206 72.5216 64.5392 75.7592 65.2902 78.9064C71.7859 106.128 95.6683 126.598 124.546 127.931C125.54 127.977 126.54 128 127.546 128L127.546 127.968C127.545 126.973 127.522 125.984 127.477 125C126.151 96.2789 105.895 72.4972 78.8962 65.8514C75.7534 65.0778 72.5193 64.5364 69.2131 64.2465C72.5216 63.9794 75.7591 63.4608 78.9063 62.7098C106.128 56.2141 126.598 32.3318 127.931 3.45447C127.977 2.46021 128 1.46008 128 0.454468L127.999 0.454468C126.994 0.454468 125.994 0.477661 125 0.52356C96.279 1.84875 72.4972 22.105 65.8514 49.1038C65.0778 52.2466 64.5364 55.4807 64.2464 58.787C63.9794 55.4784 63.4608 52.2408 62.7098 49.0936ZM124.932 3.52246Q114.723 3.97949 105.714 7.50464Q95.4193 11.533 86.6922 19.5679Q77.8514 27.7076 72.9714 37.7686Q68.2471 47.5085 67.235 59.0491L61.2561 59.0283Q60.3173 47.3959 55.608 37.5708Q50.7585 27.4534 41.9108 19.2522Q33.1649 11.1455 22.8293 7.08252Q13.7846 3.52686 3.52247 3.06799Q3.97947 13.2773 7.5046 22.2861Q11.5329 32.5808 19.5679 41.3077Q27.7077 50.1486 37.7686 55.0286Q47.5086 59.7529 59.049 60.765L59.0283 66.7439Q47.3961 67.6826 37.5711 72.3918Q27.4534 77.2413 19.2522 86.0892Q11.1456 94.835 7.0826 105.17Q3.52689 114.215 3.068 124.478Q13.2772 124.021 22.2859 120.495Q32.5807 116.467 41.3078 108.432Q50.1486 100.292 55.0286 90.2314Q59.7529 80.4915 60.7651 68.9509L66.7439 68.9717Q67.6827 80.6041 72.392 90.4293Q77.2415 100.547 86.0892 108.748Q94.8352 116.854 105.171 120.917Q114.215 124.473 124.478 124.932Q124.021 114.723 120.496 105.714Q116.467 95.4194 108.432 86.6923Q100.292 77.8514 90.2317 72.9716Q80.4916 68.2471 68.951 67.235L68.9717 61.2561Q80.6041 60.3174 90.4291 55.608Q100.547 50.7585 108.748 41.9108Q116.854 33.1649 120.917 22.8295Q124.473 13.7847 124.932 3.52246Z\"\n            fill=\"#F269AF\"\n            fill-opacity=\"1.000000\"\n            fill-rule=\"evenodd\"\n          />\n        </svg>\n      </div>\n      <div class=\"info__desc\">\n        <p>\n          Праздник можно отметить в индивидуальной банкетной комнате,\n          расписанной профессиональными художниками вручную под тематику\n          популярных фильмов или мультфильмов, либо в семейном ресторане.\n        </p>\n        <p>\n          Что мы имеем в виду, когда говорим про организацию праздников «под\n          ключ»? За каждым праздником мы закрепляем личного банкетного\n          менеджера, который будет курировать ваш праздник.\n        </p>\n      </div>\n      <div class=\"info__desc\">\n        <p>\n          В нашей базе более 300 аниматоров, шоу-программ и квестов, которые\n          помогут создать особую атмосферу праздника. Украсят ваш праздник\n          профессиональные аквагримеры, лучшие торты на заказ, а также фото —\n          и видеосъемка.\n        </p>\n        <p>\n          <strong>Joki Joya</strong> - это целая история про детей\n          и их родителей. История, которая помогает семьям объединяться,\n          окунаться с головой в детство и проводить время вместе, забывая\n          о повседневной суёте.\n        </p>\n      </div>\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.infos > *:not(:first-child) {\n  margin-top: 126px;\n}\n.info {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  &__title {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    width: 160px;\n    & h3 {\n      margin-top: 10px;\n      font-family: \"DrukWideCyr\";\n      font-size: 13px;\n      line-height: 16px;\n      text-transform: uppercase;\n    }\n  }\n  &__desc {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    row-gap: 40px;\n    width: 335px;\n    font-family: \"NunitoSans\";\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: -0.01em;\n\n    & strong {\n      font-weight: bold;\n    }\n  }\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710017374800,
+      "end": 1710017374800,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".infos>:not(:first-child){margin-top:126px}.info,.info__title{display:flex;flex-direction:column;justify-content:space-between}.info__title{width:160px}.info__title h3{font-family:DrukWideCyr;font-size:13px;line-height:16px;margin-top:10px;text-transform:uppercase}.info__desc{display:flex;flex-direction:column;font-family:NunitoSans;font-size:16px;font-weight:400;justify-content:space-between;letter-spacing:-.01em;line-height:24px;row-gap:40px;width:335px}.info__desc strong{font-weight:700}",
+      "start": 1710017374800,
+      "end": 1710017374804,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue",
+        "mappings": "AACA,0BACE,iBAMA,mBAHA,aAEA,sBADA,8BAEA,aAIE,YACA,gBAEE,wBACA,eACA,iBAHA,gBAIA,yBAGJ,YACE,aACA,sBAIA,uBAEA,eADA,gBAJA,8BAOA,sBADA,iBALA,aACA,YAOA,mBACE",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710017374804,
+      "end": 1710017374804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710017374804,
+      "end": 1710017374804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710017374804,
+      "end": 1710017374804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".infos[data-v-d7fcea50]>:not(:first-child){margin-top:126px}.info[data-v-d7fcea50],.info__title[data-v-d7fcea50]{display:flex;flex-direction:column;justify-content:space-between}.info__title[data-v-d7fcea50]{width:160px}.info__title h3[data-v-d7fcea50]{font-family:DrukWideCyr;font-size:13px;line-height:16px;margin-top:10px;text-transform:uppercase}.info__desc[data-v-d7fcea50]{display:flex;flex-direction:column;font-family:NunitoSans;font-size:16px;font-weight:400;justify-content:space-between;letter-spacing:-.01em;line-height:24px;row-gap:40px;width:335px}.info__desc strong[data-v-d7fcea50]{font-weight:700}",
+      "start": 1710017374804,
+      "end": 1710017374804,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue",
+        "mappings": "AAAA,2CAA0B,gBAAgB,CAAC,qDAAmB,YAAY,CAAC,qBAAqB,CAAC,6BAA6B,CAAC,8BAAa,WAAW,CAAC,iCAAgB,uBAAuB,CAAC,cAAc,CAAC,gBAAgB,CAAC,eAAe,CAAC,wBAAwB,CAAC,6BAAY,YAAY,CAAC,qBAAqB,CAAC,sBAAsB,CAAC,cAAc,CAAC,eAAe,CAAC,6BAA6B,CAAC,qBAAqB,CAAC,gBAAgB,CAAC,YAAY,CAAC,WAAW,CAAC,oCAAmB,eAAe",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710017374804,
+      "end": 1710017374804,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710017374804,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710017374804,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710017374805,
+      "end": 1710017374805,
+      "order": "normal"
+    }
+  ]
+}

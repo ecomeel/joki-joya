@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\n\nexport interface IFact {\n  title: string;\n  description: string;\n  background: string;\n  picture: string;\n  theme?: string;\n  buttonText: string\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Fact',\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nlet plus;\nif (props.theme) {\n  plus = plusWhite;\n} else {\n  plus = plusBlack;\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\")!\n\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      style: { backgroundColor: _ctx.background },\n      class: \"fact\"\n    }, _attrs))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><div class=\"${\n    _ssrRenderClass([{'white': _ctx.theme}, 'fact__head'])\n  }\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.title)\n  }</p><p class=\"fact__desc\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.description)\n  }</p></div><img class=\"fact__image\"${\n    _ssrRenderAttr(\"src\", _ctx.picture)\n  } data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`)\n  _push(_ssrRenderComponent(_component_ButtonArrow, {\n    text: _ctx.buttonText,\n    theme: _ctx.theme\n  }, null, _parent))\n  _push(`</div></div>`)\n}\n}\n\n})",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,45 +20,45 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709999964588,
-      "end": 1709999964588,
+      "start": 1710017374841,
+      "end": 1710017374841,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        style: { backgroundColor: _ctx.background },\n        class: \"fact\"\n      }, _attrs))} data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><div class=\"${_ssrRenderClass([{ \"white\": _ctx.theme }, \"fact__head\"])}\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${_ssrInterpolate(_ctx.title)}</p><p class=\"fact__desc\" data-v-d566d123>${_ssrInterpolate(_ctx.description)}</p></div><img class=\"fact__image\"${_ssrRenderAttr(\"src\", _ctx.picture)} data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`);\n      _push(_ssrRenderComponent(_component_ButtonArrow, {\n        text: _ctx.buttonText,\n        theme: _ctx.theme\n      }, null, _parent));\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709999964589,
-      "end": 1709999964604,
+      "start": 1710017374842,
+      "end": 1710017374849,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -74,165 +74,165 @@
     },
     {
       "name": "vite:json",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374849,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374849,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999964604,
-      "end": 1709999964604,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709999964604,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ButtonArrow = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        style: { backgroundColor: _ctx.background },\n        class: \"fact\"\n      }, _attrs))} data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><div class=\"${_ssrRenderClass([{ \"white\": _ctx.theme }, \"fact__head\"])}\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${_ssrInterpolate(_ctx.title)}</p><p class=\"fact__desc\" data-v-d566d123>${_ssrInterpolate(_ctx.description)}</p></div><img class=\"fact__image\"${_ssrRenderAttr(\"src\", _ctx.picture)} data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`);\n      _push(_ssrRenderComponent(_component_ButtonArrow, {\n        text: _ctx.buttonText,\n        theme: _ctx.theme\n      }, null, _parent));\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,20 +245,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709999964605,
-      "end": 1709999964605,
+      "start": 1710017374850,
+      "end": 1710017374850,
       "order": "normal"
     }
   ]

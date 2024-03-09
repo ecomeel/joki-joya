@@ -9,7 +9,7 @@ export interface IFact {
   background: string;
   picture: string;
   theme?: string;
-  buttonText: string
+  buttonText: string;
 }
 
 const props = defineProps<IFact>();
@@ -27,7 +27,7 @@ if (props.theme) {
     <img class="fact__plus fact__plus_top-right" :src="plus" />
     <img class="fact__plus fact__plus_bot-left" :src="plus" />
     <img class="fact__plus fact__plus_bot-right" :src="plus" />
-    <div :class="[{'white': theme}, 'fact__head']">
+    <div :class="[{ white: theme }, 'fact__head']">
       <p class="fact__title">{{ title }}</p>
       <p class="fact__desc">{{ description }}</p>
     </div>
@@ -45,7 +45,7 @@ if (props.theme) {
 
   &::before {
     content: "";
-    width: 344px;
+    width: 100%;
     height: 240px;
     position: absolute;
     z-index: 10;

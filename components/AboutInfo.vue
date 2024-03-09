@@ -40,9 +40,7 @@
           корпоративные праздники.
         </p>
         <div class="button-wrapper">
-          <ButtonArrow
-            text="Посмотреть адреса"
-          />
+          <ButtonArrow text="Посмотреть адреса" />
         </div>
       </div>
     </div>
@@ -99,21 +97,44 @@
 <style lang="scss" scoped>
 .infos > *:not(:first-child) {
   margin-top: 126px;
+
+  @media (max-width: 1024px) {
+    margin-top: 40px;
+  }
 }
 .info {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 160px;
+
+    @media (max-width: 1024px) {
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+      column-gap: 100px;
+    }
+    @media (max-width: 375px) {
+      column-gap: 50px;
+    }
     & h3 {
       margin-top: 10px;
       font-family: "DrukWideCyr";
       font-size: 13px;
       line-height: 16px;
       text-transform: uppercase;
+    }
+    & svg {
+      width: 75px;
     }
   }
   &__desc {
@@ -127,6 +148,11 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      row-gap: 20px;
+    }
 
     & strong {
       font-weight: bold;

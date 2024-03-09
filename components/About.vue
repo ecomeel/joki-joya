@@ -1,10 +1,4 @@
-<script>
-export default {
-  setup() {
-
-  }
-}
-</script>
+<script></script>
 <template>
   <section class="about">
     <Vertical />
@@ -15,15 +9,22 @@ export default {
   </section>
 </template>
 <style lang="scss" scoped>
-  .about {
-    margin-top: 140px;
-    display: flex;
-    column-gap: 100px;
-    max-width: 100%;
+.about {
+  margin-top: 140px;
+  display: flex;
+  column-gap: 100px;
+  max-width: 100%;
 
-    &__content-wrapper {
-      flex: 1 0 auto;
-      max-width: 1040px;
-    }
+  @media (max-width: 768px) {
+    margin-top: 80px;
+    column-gap: 50px;
   }
+  @media (max-width: 525px) {
+    column-gap: 35px;
+  }
+
+  &__content-wrapper {
+    max-width: 80%;
+  }
+}
 </style>

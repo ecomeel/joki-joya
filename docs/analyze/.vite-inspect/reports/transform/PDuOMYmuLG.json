@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<script></script>\n<template>\n  <header class=\"header\">\n    <div class=\"logo\"></div>\n    <div class=\"container header__container\">\n      <div class=\"contacts\">\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/location.png\" alt=\"\" />\n          <p class=\"headers\">Москва</p>\n        </div>\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/phone.png\" alt=\"\" />\n          <p class=\"phone\">+7 (812) 635 22 77</p>\n        </div>\n      </div>\n      <div class=\"take-order\">\n        <button class=\"order order_pink\">Купить билеты</button>\n        <button class=\"order order_green\">Заказать праздник</button>\n      </div>\n    </div>\n    <div class=\"menu\">\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <img\n        class=\"short\"\n        src=\"/assets/images/icons/burger/long-stick.png\"\n        alt=\"\"\n      />\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <p>Меню</p>\n    </div>\n  </header>\n</template>\n<style lang=\"scss\" scoped>\n.header {\n  padding: 9px 6px 9px 16px;\n  position: fixed;\n  top: 0;\n  z-index: 20;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.811);\n  backdrop-filter: blur(5px);\n  border-bottom: 3px solid pink;\n  border-image: linear-gradient(\n    224.14deg,\n    rgb(253, 243, 152) -1.136%,\n    rgb(247, 190, 135) 22.241%,\n    rgb(229, 99, 125) 44.972%,\n    rgb(232, 75, 186) 65.177%,\n    rgb(147, 16, 216) 98.333%\n  );\n  border-image-slice: 1;\n\n  &__container {\n    display: flex;\n    justify-content: space-between;\n  }\n}\n.logo {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  background: url(\"/assets/images/logo.png\");\n  background-size: cover;\n  background-position: center center;\n}\n.contacts {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n}\n.contact {\n  padding: 6px 16px;\n  display: flex;\n  align-items: center;\n  column-gap: 8px;\n  border: 2px solid #5834a4;\n  border-radius: 30px;\n\n  & img {\n    height: 18px;\n  }\n  & p {\n    color: #5834a4;\n    text-transform: uppercase;\n  }\n}\n.phone {\n  font-family: \"DrukWideCyr\";\n  font-size: 13px;\n  line-height: 16px;\n}\n.take-order {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n}\n.order {\n  padding: 8px 32px;\n  border: none;\n  border-radius: 30px;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n\n  &_pink {\n    background-color: #f269af;\n    color: #fff;\n  }\n  &_green {\n    background-color: #abec20;\n  }\n}\n.menu {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n\n  row-gap: 5px;\n  position: absolute;\n  top: 15px;\n  right: 16px;\n  & img {\n    height: 4px;\n  }\n  & p {\n    font-family: \"Montserrat Bold\";\n    font-size: 11px;\n    line-height: 16px;\n    letter-spacing: 0.01em;\n    color: #0267ff;\n  }\n}\n.short {\n  width: 22px;\n}\n</style>\n",
-      "start": 1709999963513,
-      "end": 1709999963545,
+      "result": "<script></script>\n<template>\n  <header class=\"header\">\n    <div class=\"logo\"></div>\n    <div class=\"container header__container\">\n      <div class=\"contacts\">\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/location.png\" alt=\"\" />\n          <p class=\"headers\">Москва</p>\n        </div>\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/phone.png\" alt=\"\" />\n          <p class=\"phone\">+7 (812) 635 22 77</p>\n        </div>\n      </div>\n      <div class=\"take-order\">\n        <button class=\"order order_pink\">Купить билеты</button>\n        <button class=\"order order_green\">Заказать праздник</button>\n      </div>\n    </div>\n    <div class=\"menu\">\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <img\n        class=\"short\"\n        src=\"/assets/images/icons/burger/long-stick.png\"\n        alt=\"\"\n      />\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <p>Меню</p>\n    </div>\n  </header>\n</template>\n<style lang=\"scss\" scoped>\n.header {\n  padding: 9px 6px 9px 16px;\n  position: fixed;\n  top: 0;\n  z-index: 20;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.811);\n  backdrop-filter: blur(5px);\n  border-bottom: 3px solid pink;\n  border-image: linear-gradient(\n    224.14deg,\n    rgb(253, 243, 152) -1.136%,\n    rgb(247, 190, 135) 22.241%,\n    rgb(229, 99, 125) 44.972%,\n    rgb(232, 75, 186) 65.177%,\n    rgb(147, 16, 216) 98.333%\n  );\n  border-image-slice: 1;\n\n  &__container {\n    display: flex;\n    justify-content: space-between;\n\n    @media (max-width: 1340px) {\n      padding-left: 60px;\n      padding-right: 60px;\n    }\n    @media (max-width: 565px) {\n      justify-content: center;\n    }\n  }\n}\n.logo {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  background: url(\"/assets/images/logo.png\");\n  background-size: cover;\n  background-position: center center;\n}\n.contacts {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n\n  @media (max-width: 565px) {\n    display: none;\n  }\n}\n.contact {\n  padding: 6px 16px;\n  display: flex;\n  align-items: center;\n  column-gap: 8px;\n  border: 2px solid #5834a4;\n  border-radius: 30px;\n\n  &:first-child {\n    @media (max-width: 768px) {\n      display: none;\n    }\n  }\n\n  & img {\n    height: 18px;\n  }\n  & p {\n    color: #5834a4;\n    text-transform: uppercase;\n  }\n}\n.phone {\n  font-family: \"DrukWideCyr\";\n  font-size: 13px;\n  line-height: 16px;\n}\n.take-order {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n}\n.order {\n  padding: 8px 32px;\n  border: none;\n  border-radius: 30px;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n\n  &_pink {\n    background-color: #f269af;\n    color: #fff;\n  }\n  &_green {\n    background-color: #abec20;\n\n    @media (max-width: 1024px) {\n      display: none;\n    }\n  }\n}\n.menu {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-end;\n\n  row-gap: 5px;\n  position: absolute;\n  top: 15px;\n  right: 16px;\n  & img {\n    height: 4px;\n  }\n  & p {\n    font-family: \"Montserrat Bold\";\n    font-size: 11px;\n    line-height: 16px;\n    letter-spacing: 0.01em;\n    color: #0267ff;\n  }\n}\n.short {\n  width: 22px;\n}\n</style>\n",
+      "start": 1710017373882,
+      "end": 1710017373905,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709999963545,
-      "end": 1709999963545,
+      "start": 1710017373905,
+      "end": 1710017373905,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/assets/images/icons/location.png'\nimport _imports_1 from '/assets/images/icons/phone.png'\nimport _imports_2 from '/assets/images/icons/burger/long-stick.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e784f4ad\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"header\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"logo\\\" data-v-e784f4ad></div><div class=\\\"container header__container\\\" data-v-e784f4ad><div class=\\\"contacts\\\" data-v-e784f4ad><div class=\\\"contact\\\" data-v-e784f4ad><img src=\\\"\" + _imports_0 + \"\\\" alt=\\\"\\\" data-v-e784f4ad><p class=\\\"headers\\\" data-v-e784f4ad>Москва</p></div><div class=\\\"contact\\\" data-v-e784f4ad><img src=\\\"\" + _imports_1 + \"\\\" alt=\\\"\\\" data-v-e784f4ad><p class=\\\"phone\\\" data-v-e784f4ad>+7 (812) 635 22 77</p></div></div><div class=\\\"take-order\\\" data-v-e784f4ad><button class=\\\"order order_pink\\\" data-v-e784f4ad>Купить билеты</button><button class=\\\"order order_green\\\" data-v-e784f4ad>Заказать праздник</button></div></div><div class=\\\"menu\\\" data-v-e784f4ad><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-e784f4ad><img class=\\\"short\\\" src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-e784f4ad><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-e784f4ad><p data-v-e784f4ad>Меню</p></div>\", 3)\nconst _hoisted_5 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"header\", _hoisted_1, _hoisted_5))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue?vue&type=style&index=0&scoped=e784f4ad&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-e784f4ad\"]])",
-      "start": 1709999963545,
-      "end": 1709999963549,
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/assets/images/icons/location.png'\nimport _imports_1 from '/assets/images/icons/phone.png'\nimport _imports_2 from '/assets/images/icons/burger/long-stick.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9c3df6f5\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"header\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"logo\\\" data-v-9c3df6f5></div><div class=\\\"container header__container\\\" data-v-9c3df6f5><div class=\\\"contacts\\\" data-v-9c3df6f5><div class=\\\"contact\\\" data-v-9c3df6f5><img src=\\\"\" + _imports_0 + \"\\\" alt=\\\"\\\" data-v-9c3df6f5><p class=\\\"headers\\\" data-v-9c3df6f5>Москва</p></div><div class=\\\"contact\\\" data-v-9c3df6f5><img src=\\\"\" + _imports_1 + \"\\\" alt=\\\"\\\" data-v-9c3df6f5><p class=\\\"phone\\\" data-v-9c3df6f5>+7 (812) 635 22 77</p></div></div><div class=\\\"take-order\\\" data-v-9c3df6f5><button class=\\\"order order_pink\\\" data-v-9c3df6f5>Купить билеты</button><button class=\\\"order order_green\\\" data-v-9c3df6f5>Заказать праздник</button></div></div><div class=\\\"menu\\\" data-v-9c3df6f5><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-9c3df6f5><img class=\\\"short\\\" src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-9c3df6f5><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" data-v-9c3df6f5><p data-v-9c3df6f5>Меню</p></div>\", 3)\nconst _hoisted_5 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"header\", _hoisted_1, _hoisted_5))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue?vue&type=style&index=0&scoped=9c3df6f5&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-9c3df6f5\"]])",
+      "start": 1710017373905,
+      "end": 1710017373908,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,140 +62,140 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709999963549,
-      "end": 1709999963549,
+      "start": 1710017373908,
+      "end": 1710017373908,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999963549,
-      "end": 1709999963550,
+      "start": 1710017373908,
+      "end": 1710017373908,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373908,
+      "end": 1710017373908,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373908,
+      "end": 1710017373908,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373908,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709999963550,
-      "end": 1709999963550,
+      "start": 1710017373909,
+      "end": 1710017373909,
       "order": "normal"
     }
   ]

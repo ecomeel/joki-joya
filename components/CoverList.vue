@@ -32,6 +32,10 @@
     object-fit: cover;
     object-position: center center;
     border-radius: 32px;
+
+    @media (max-width: 1230px) {
+      object-position: 10%;
+    }
   }
 }
 .title-wrapper {
@@ -100,6 +104,10 @@
   }
   & > *:not(:last-child) {
     margin-right: 19px;
+
+    @media (max-width: 1230px) {
+      margin-right: 0;
+    }
   }
   & > *:not(:first-child) {
     @media (max-width: 1230px) {
