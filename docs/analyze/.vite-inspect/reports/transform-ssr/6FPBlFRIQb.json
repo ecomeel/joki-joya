@@ -1,0 +1,256 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport blackArrow from \"/images/Arrow.png\";\nimport whiteArrow from \"/images/Arrow-white.png\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ButtonArrow',\n  __ssrInlineRender: true,\n  props: {\n  text: String,\n  theme: String,\n},\n  setup(__props) {\n\nconst props = __props;\n\nconst arrow = props.theme ? whiteArrow : blackArrow;\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<a${\n    _ssrRenderAttrs(_mergeProps({\n      class: [{ button_white: __props.theme }, 'button'],\n      href: \"\"\n    }, _attrs))\n  }>${\n    _ssrInterpolate(__props.text)\n  } <img class=\"button__arrow\"${\n    _ssrRenderAttr(\"src\", _unref(arrow))\n  } alt=\"arrow\"></a>`)\n}\n}\n\n})",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport { defineProps } from \"vue\";\nimport blackArrow from \"/images/Arrow.png\";\nimport whiteArrow from \"/images/Arrow-white.png\";\nconst props = defineProps({\n  text: String,\n  theme: String,\n});\n\nconst arrow = props.theme ? whiteArrow : blackArrow;\n\n</script>\n<template>\n  <a :class=\"[{ button_white: theme }, 'button']\" href=\"\">\n    {{ text }}\n    <img class=\"button__arrow\" :src=\"arrow\" alt=\"arrow\"\n  /></a>\n</template>\n<style lang=\"scss\" scopted>\n.button {\n  padding: 12px 17px;\n  border-radius: 48px;\n  border: 2px solid #000;\n  display: inline-block;\n  font-family: \"DrukCyr\";\n  font-size: 22px;\n  line-height: 24px;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n  &_white {\n    color: #fff;\n    border-color: #fff;\n  }\n  &__arrow {\n    margin-left: 13px;\n    width: 32px;\n  }\n}\n</style>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AACkC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;;;;;AAHzB;AAIxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAGZ,CAAC;AACH;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709999964603,
+      "end": 1709999964603,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport blackArrow from \"/images/Arrow.png\";\nimport whiteArrow from \"/images/Arrow-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ButtonArrow\",\n  __ssrInlineRender: true,\n  props: {\n    text: String,\n    theme: String\n  },\n  setup(__props) {\n    const props = __props;\n    const arrow = props.theme ? whiteArrow : blackArrow;\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<a${_ssrRenderAttrs(_mergeProps({\n        class: [{ button_white: __props.theme }, \"button\"],\n        href: \"\"\n      }, _attrs))}>${_ssrInterpolate(__props.text)} <img class=\"button__arrow\"${_ssrRenderAttr(\"src\", _unref(arrow))} alt=\"arrow\"></a>`);\n    };\n  }\n});\n",
+      "start": 1709999964604,
+      "end": 1709999964613,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport blackArrow from \"/images/Arrow.png\";\nimport whiteArrow from \"/images/Arrow-white.png\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ButtonArrow',\n  __ssrInlineRender: true,\n  props: {\n  text: String,\n  theme: String,\n},\n  setup(__props) {\n\nconst props = __props;\n\nconst arrow = props.theme ? whiteArrow : blackArrow;\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<a${\n    _ssrRenderAttrs(_mergeProps({\n      class: [{ button_white: __props.theme }, 'button'],\n      href: \"\"\n    }, _attrs))\n  }>${\n    _ssrInterpolate(__props.text)\n  } <img class=\"button__arrow\"${\n    _ssrRenderAttr(\"src\", _unref(arrow))\n  } alt=\"arrow\"></a>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,cAAc,mBAAmB;AAC3D,SAAS,iBAAiB,gBAAgB,kBAAkB,iBAAiB,kBAAkB,uBAAuB;AAGtH,OAAO,gBAAgB;AACvB,OAAO,gBAAgB;AAEvB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACP,MAAM;AAAA,IACN,OAAO;AAAA,EACT;AAAA,EACE,MAAM,SAAS;AAEjB,UAAM,QAAQ;AAEd,UAAM,QAAQ,MAAM,QAAQ,aAAa;AAGzC,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,KACJ,gBAAgB,YAAY;AAAA,QAC1B,OAAO,CAAC,EAAE,cAAc,QAAQ,MAAM,GAAG,QAAQ;AAAA,QACjD,MAAM;AAAA,MACR,GAAG,MAAM,CAAC,CACZ,IACE,gBAAgB,QAAQ,IAAI,CAC9B,8BACE,eAAe,OAAO,OAAO,KAAK,CAAC,CACrC,mBAAmB;AAAA,IACrB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1709999964613,
+      "end": 1709999964613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709999964613,
+      "end": 1709999964613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709999964614,
+      "end": 1709999964614,
+      "order": "normal"
+    }
+  ]
+}

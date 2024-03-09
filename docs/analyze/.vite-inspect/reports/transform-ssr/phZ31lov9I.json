@@ -1,0 +1,265 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Fact.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\n\nexport interface IFact {\n  title: string;\n  description: string;\n  background: string;\n  picture: string;\n  theme?: string;\n  buttonText: string\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Fact',\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nlet plus;\nif (props.theme) {\n  plus = plusWhite;\n} else {\n  plus = plusBlack;\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\")!\n\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      style: { backgroundColor: _ctx.background },\n      class: \"fact\"\n    }, _attrs))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><div class=\"${\n    _ssrRenderClass([{'white': _ctx.theme}, 'fact__head'])\n  }\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.title)\n  }</p><p class=\"fact__desc\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.description)\n  }</p></div><img class=\"fact__image\"${\n    _ssrRenderAttr(\"src\", _ctx.picture)\n  } data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`)\n  _push(_ssrRenderComponent(_component_ButtonArrow, {\n    text: _ctx.buttonText,\n    theme: _ctx.theme\n  }, null, _parent))\n  _push(`</div></div>`)\n}\n}\n\n})",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Fact.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport { defineProps } from \"vue\";\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\n\nexport interface IFact {\n  title: string;\n  description: string;\n  background: string;\n  picture: string;\n  theme?: string;\n  buttonText: string\n}\n\nconst props = defineProps<IFact>();\n\nlet plus;\nif (props.theme) {\n  plus = plusWhite;\n} else {\n  plus = plusBlack;\n}\n</script>\n<template>\n  <div :style=\"{ backgroundColor: background }\" class=\"fact\">\n    <img class=\"fact__plus fact__plus_top-left\" :src=\"plus\" />\n    <img class=\"fact__plus fact__plus_top-right\" :src=\"plus\" />\n    <img class=\"fact__plus fact__plus_bot-left\" :src=\"plus\" />\n    <img class=\"fact__plus fact__plus_bot-right\" :src=\"plus\" />\n    <div :class=\"[{'white': theme}, 'fact__head']\">\n      <p class=\"fact__title\">{{ title }}</p>\n      <p class=\"fact__desc\">{{ description }}</p>\n    </div>\n    <img class=\"fact__image\" :src=\"picture\" />\n    <div class=\"fact__button-wrapper\">\n      <ButtonArrow :text=\"buttonText\" :theme=\"theme\" />\n    </div>\n  </div>\n</template>\n<style lang=\"scss\" scoped>\n.fact {\n  position: relative;\n  width: 344px;\n  height: 240px;\n\n  &::before {\n    content: \"\";\n    width: 344px;\n    height: 240px;\n    position: absolute;\n    z-index: 10;\n    opacity: 0.3;\n    background-image: url(\"/assets/images/plastic-back.png\");\n  }\n\n  &__plus {\n    position: absolute;\n    width: 16px;\n    height: 16px;\n    z-index: 16;\n\n    &_top-left {\n      top: 16px;\n      left: 16px;\n    }\n    &_top-right {\n      top: 16px;\n      right: 16px;\n    }\n    &_bot-left {\n      bottom: 16px;\n      left: 16px;\n    }\n    &_bot-right {\n      bottom: 16px;\n      right: 16px;\n    }\n  }\n  &__head {\n    position: absolute;\n    top: 32px;\n    left: 40px;\n    text-transform: uppercase;\n  }\n  &__title {\n    font-size: 54px;\n    line-height: 48px;\n  }\n  &__desc {\n    font-family: \"DrukWideCyr\", sans-serif;\n    font-size: 13px;\n    line-height: 16px;\n    letter-spacing: 0.03em;\n  }\n  &__image {\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    z-index: 1;\n  }\n  &__button-wrapper {\n    position: absolute;\n    left: 40px;\n    bottom: 24px;\n    z-index: 11;\n  }\n}\n.white {\n  color: #fff;\n}\n</style>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AACkC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC;AACD;;;;;;;;;;;;;;AAbwB;AAcxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAAoB,CAAC;AACnC;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709999964588,
+      "end": 1709999964588,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        style: { backgroundColor: _ctx.background },\n        class: \"fact\"\n      }, _attrs))} data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><div class=\"${_ssrRenderClass([{ \"white\": _ctx.theme }, \"fact__head\"])}\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${_ssrInterpolate(_ctx.title)}</p><p class=\"fact__desc\" data-v-d566d123>${_ssrInterpolate(_ctx.description)}</p></div><img class=\"fact__image\"${_ssrRenderAttr(\"src\", _ctx.picture)} data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`);\n      _push(_ssrRenderComponent(_component_ButtonArrow, {\n        text: _ctx.buttonText,\n        theme: _ctx.theme\n      }, null, _parent));\n      _push(`</div></div>`);\n    };\n  }\n});\n",
+      "start": 1709999964589,
+      "end": 1709999964604,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Fact.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\n\nexport interface IFact {\n  title: string;\n  description: string;\n  background: string;\n  picture: string;\n  theme?: string;\n  buttonText: string\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Fact',\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nlet plus;\nif (props.theme) {\n  plus = plusWhite;\n} else {\n  plus = plusBlack;\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ButtonArrow = _resolveComponent(\"ButtonArrow\")!\n\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      style: { backgroundColor: _ctx.background },\n      class: \"fact\"\n    }, _attrs))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${\n    _ssrRenderAttr(\"src\", _unref(plus))\n  } data-v-d566d123><div class=\"${\n    _ssrRenderClass([{'white': _ctx.theme}, 'fact__head'])\n  }\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.title)\n  }</p><p class=\"fact__desc\" data-v-d566d123>${\n    _ssrInterpolate(_ctx.description)\n  }</p></div><img class=\"fact__image\"${\n    _ssrRenderAttr(\"src\", _ctx.picture)\n  } data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`)\n  _push(_ssrRenderComponent(_component_ButtonArrow, {\n    text: _ctx.buttonText,\n    theme: _ctx.theme\n  }, null, _parent))\n  _push(`</div></div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,oBAAoB,mBAAmB,cAAc,mBAAmB;AAClG,SAAS,iBAAiB,gBAAgB,kBAAkB,iBAAiB,sBAAsB,qBAAqB,kBAAkB,iBAAiB,kBAAkB,uBAAuB;AAGpM,OAAO,eAAe;AACtB,OAAO,eAAe;AAYtB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACL,OAAO,CAAC;AAAA,IACR,aAAa,CAAC;AAAA,IACd,YAAY,CAAC;AAAA,IACb,SAAS,CAAC;AAAA,IACV,OAAO,CAAC;AAAA,IACR,YAAY,CAAC;AAAA,EACf;AAAA,EACA,MAAM,SAAc;AAEtB,UAAM,QAAQ;AAEd,QAAI;AACJ,QAAI,MAAM,OAAO;AACf,aAAO;AAAA,IACT,OAAO;AACL,aAAO;AAAA,IACT;AAEA,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,yBAAyB,kBAAkB,aAAa;AAE9D,YAAM,OACJ,gBAAgB,YAAY;AAAA,QAC1B,OAAO,EAAE,iBAAiB,KAAK,WAAW;AAAA,QAC1C,OAAO;AAAA,MACT,GAAG,MAAM,CAAC,CACZ,+DACE,eAAe,OAAO,OAAO,IAAI,CAAC,CACpC,gEACE,eAAe,OAAO,OAAO,IAAI,CAAC,CACpC,+DACE,eAAe,OAAO,OAAO,IAAI,CAAC,CACpC,gEACE,eAAe,OAAO,OAAO,IAAI,CAAC,CACpC,gCACE,gBAAgB,CAAC,EAAC,SAAS,KAAK,MAAK,GAAG,YAAY,CAAC,CACvD,4DACE,gBAAgB,KAAK,KAAK,CAC5B,6CACE,gBAAgB,KAAK,WAAW,CAClC,qCACE,eAAe,OAAO,KAAK,OAAO,CACpC,qEAAqE;AACrE,YAAM,oBAAoB,wBAAwB;AAAA,QAChD,MAAM,KAAK;AAAA,QACX,OAAO,KAAK;AAAA,MACd,GAAG,MAAM,OAAO,CAAC;AACjB,YAAM,cAAc;AAAA,IACtB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964604,
+      "end": 1709999964604,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709999964604,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/ButtonArrow.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport plusBlack from \"/images/plus-black.png\";\nimport plusWhite from \"/images/plus-white.png\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Fact\",\n  __ssrInlineRender: true,\n  props: {\n    title: {},\n    description: {},\n    background: {},\n    picture: {},\n    theme: {},\n    buttonText: {}\n  },\n  setup(__props) {\n    const props = __props;\n    let plus;\n    if (props.theme) {\n      plus = plusWhite;\n    } else {\n      plus = plusBlack;\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ButtonArrow = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        style: { backgroundColor: _ctx.background },\n        class: \"fact\"\n      }, _attrs))} data-v-d566d123><img class=\"fact__plus fact__plus_top-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_top-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-left\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><img class=\"fact__plus fact__plus_bot-right\"${_ssrRenderAttr(\"src\", _unref(plus))} data-v-d566d123><div class=\"${_ssrRenderClass([{ \"white\": _ctx.theme }, \"fact__head\"])}\" data-v-d566d123><p class=\"fact__title\" data-v-d566d123>${_ssrInterpolate(_ctx.title)}</p><p class=\"fact__desc\" data-v-d566d123>${_ssrInterpolate(_ctx.description)}</p></div><img class=\"fact__image\"${_ssrRenderAttr(\"src\", _ctx.picture)} data-v-d566d123><div class=\"fact__button-wrapper\" data-v-d566d123>`);\n      _push(_ssrRenderComponent(_component_ButtonArrow, {\n        text: _ctx.buttonText,\n        theme: _ctx.theme\n      }, null, _parent));\n      _push(`</div></div>`);\n    };\n  }\n});\n",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1N,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;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C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvyB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709999964605,
+      "end": 1709999964605,
+      "order": "normal"
+    }
+  ]
+}

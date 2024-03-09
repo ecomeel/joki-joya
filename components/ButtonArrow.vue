@@ -7,14 +7,8 @@ const props = defineProps({
   theme: String,
 });
 
-let arrow;
-if (props.theme) {
-  arrow = whiteArrow;
-  const buttonNode = document;
-  console.log(buttonNode);
-} else {
-  arrow = blackArrow;
-}
+const arrow = props.theme ? whiteArrow : blackArrow;
+
 </script>
 <template>
   <a :class="[{ button_white: theme }, 'button']" href="">

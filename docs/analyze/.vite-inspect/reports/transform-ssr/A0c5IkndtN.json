@@ -1,0 +1,276 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue?vue&type=style&index=0&scoped=81d6ca30&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.facts {\n  margin-top: 110px;\n  width: 1040px;\n  display: flex;\n  flex-wrap: wrap;\n\n  // & > * {\n  //   flex: 1 0 33%;\n  // }\n}\n",
+      "start": 1709999964548,
+      "end": 1709999964548,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue"
+        ],
+        "names": [],
+        "mappings": ";AA+EA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;;EAEf,CAAC,EAAE,EAAE,EAAE,EAAE;EACT,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,EAAE,CAAC,CAAC,CAAC;EAClB,CAAC,EAAE;AACL",
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<script setup>\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n]\n</script>\n<template>\n  <section class=\"facts\">\n    <Fact\n      v-for=\"fact in facts\"\n      :title=\"fact.title\"\n      :description=\"fact.description\"\n      :background=\"fact.background\"\n      :picture=\"fact.picture\"\n      :buttonText=\"fact.buttonText\"\n      :theme=\"fact.theme\"\n    />\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.facts {\n  margin-top: 110px;\n  width: 1040px;\n  display: flex;\n  flex-wrap: wrap;\n\n  // & > * {\n  //   flex: 1 0 33%;\n  // }\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964549,
+      "end": 1709999964549,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709999964549,
+      "end": 1709999964549,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964549,
+      "end": 1709999964549,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709999964549,
+      "end": 1709999964549,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709999964549,
+      "end": 1709999964549,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".facts{display:flex;flex-wrap:wrap;margin-top:110px;width:1040px}",
+      "start": 1709999964549,
+      "end": 1709999964558,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue",
+        "mappings": "AACA,OAGE,aACA,eAHA,iBACA",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".facts[data-v-81d6ca30]{display:flex;flex-wrap:wrap;margin-top:110px;width:1040px}",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue",
+        "mappings": "AAAA,wBAAO,YAAY,CAAC,cAAc,CAAC,gBAAgB,CAAC,YAAY",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709999964558,
+      "end": 1709999964558,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709999964558,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709999964559,
+      "end": 1709999964559,
+      "order": "normal"
+    }
+  ]
+}

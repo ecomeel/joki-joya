@@ -1,43 +1,39 @@
-<script>
-export default {
-  props: {
-    title: String,
-    description: String,
-    background: String,
-    picture: String,
-    theme: String,
-    buttonText: String,
-  },
-  setup(props) {
-    
-  },
-};
+<script setup lang="ts">
+import { defineProps } from "vue";
+import plusBlack from "/images/plus-black.png";
+import plusWhite from "/images/plus-white.png";
+
+export interface IFact {
+  title: string;
+  description: string;
+  background: string;
+  picture: string;
+  theme?: string;
+  buttonText: string
+}
+
+const props = defineProps<IFact>();
+
+let plus;
+if (props.theme) {
+  plus = plusWhite;
+} else {
+  plus = plusBlack;
+}
 </script>
 <template>
-  <div class="fact">
-    <img
-      class="fact__plus fact__plus_top-left"
-      src="/assets/images/icons/plus-black.png"
-    />
-    <img
-      class="fact__plus fact__plus_top-right"
-      src="/assets/images/icons/plus-black.png"
-    />
-    <img
-      class="fact__plus fact__plus_bot-left"
-      src="/assets/images/icons/plus-black.png"
-    />
-    <img
-      class="fact__plus fact__plus_bot-right"
-      src="/assets/images/icons/plus-black.png"
-    />
-    <div class="fact__head">
+  <div :style="{ backgroundColor: background }" class="fact">
+    <img class="fact__plus fact__plus_top-left" :src="plus" />
+    <img class="fact__plus fact__plus_top-right" :src="plus" />
+    <img class="fact__plus fact__plus_bot-left" :src="plus" />
+    <img class="fact__plus fact__plus_bot-right" :src="plus" />
+    <div :class="[{'white': theme}, 'fact__head']">
       <p class="fact__title">{{ title }}</p>
       <p class="fact__desc">{{ description }}</p>
     </div>
-    <img class="fact__image" src="/assets/images/facts/castle.png" />
+    <img class="fact__image" :src="picture" />
     <div class="fact__button-wrapper">
-      <ButtonArrow :text="buttonText" theme="white" />
+      <ButtonArrow :text="buttonText" :theme="theme" />
     </div>
   </div>
 </template>
@@ -46,7 +42,6 @@ export default {
   position: relative;
   width: 344px;
   height: 240px;
-  background-color: #abec20;
 
   &::before {
     content: "";
@@ -54,7 +49,7 @@ export default {
     height: 240px;
     position: absolute;
     z-index: 10;
-    opacity: 0.2;
+    opacity: 0.3;
     background-image: url("/assets/images/plastic-back.png");
   }
 
@@ -62,6 +57,7 @@ export default {
     position: absolute;
     width: 16px;
     height: 16px;
+    z-index: 16;
 
     &_top-left {
       top: 16px;
@@ -108,5 +104,8 @@ export default {
     bottom: 24px;
     z-index: 11;
   }
+}
+.white {
+  color: #fff;
 }
 </style>

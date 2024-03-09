@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script></script>\n<template>\n  <header class=\"header\">\n    <div class=\"logo\"></div>\n    <div class=\"container header__container\">\n      <div class=\"contacts\">\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/location.png\" alt=\"\" />\n          <p class=\"headers\">Москва</p>\n        </div>\n        <div class=\"contact\">\n          <img src=\"/assets/images/icons/phone.png\" alt=\"\" />\n          <p class=\"phone\">+7 (812) 635 22 77</p>\n        </div>\n      </div>\n      <div class=\"take-order\">\n        <button class=\"order order_pink\">Купить билеты</button>\n        <button class=\"order order_green\">Заказать праздник</button>\n      </div>\n    </div>\n    <div class=\"menu\">\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <img\n        class=\"short\"\n        src=\"/assets/images/icons/burger/long-stick.png\"\n        alt=\"\"\n      />\n      <img src=\"/assets/images/icons/burger/long-stick.png\" alt=\"\" />\n      <p>Меню</p>\n    </div>\n  </header>\n</template>\n<style lang=\"scss\" scoped>\n.header {\n  padding: 9px 6px 9px 16px;\n  position: fixed;\n  top: 0;\n  z-index: 20;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.811);\n  backdrop-filter: blur(5px);\n  border-bottom: 3px solid pink;\n  border-image: linear-gradient(\n    224.14deg,\n    rgb(253, 243, 152) -1.136%,\n    rgb(247, 190, 135) 22.241%,\n    rgb(229, 99, 125) 44.972%,\n    rgb(232, 75, 186) 65.177%,\n    rgb(147, 16, 216) 98.333%\n  );\n  border-image-slice: 1;\n\n  &__container {\n    display: flex;\n    justify-content: space-between;\n  }\n}\n.logo {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  background: url(\"/assets/images/logo.png\");\n  background-size: cover;\n  background-position: center center;\n}\n.contacts {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n}\n.contact {\n  padding: 6px 16px;\n  display: flex;\n  align-items: center;\n  column-gap: 8px;\n  border: 2px solid #5834a4;\n  border-radius: 30px;\n\n  & img {\n    height: 18px;\n  }\n  & p {\n    color: #5834a4;\n    text-transform: uppercase;\n  }\n}\n.phone {\n  font-family: \"DrukWideCyr\";\n  font-size: 13px;\n  line-height: 16px;\n}\n.take-order {\n  margin-left: -5px;\n  display: flex;\n  column-gap: 16px;\n}\n.order {\n  padding: 8px 32px;\n  border: none;\n  border-radius: 30px;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n\n  &_pink {\n    background-color: #f269af;\n    color: #fff;\n  }\n  &_green {\n    background-color: #abec20;\n  }\n}\n.menu {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n\n  row-gap: 5px;\n  position: absolute;\n  top: 15px;\n  right: 16px;\n  & img {\n    height: 4px;\n  }\n  & p {\n    font-family: \"Montserrat Bold\";\n    font-size: 11px;\n    line-height: 16px;\n    letter-spacing: 0.01em;\n    color: #0267ff;\n  }\n}\n.short {\n  width: 22px;\n}\n</style>\n",
-      "start": 1709984446297,
-      "end": 1709984446324,
+      "start": 1709999964404,
+      "end": 1709999964451,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709984446324,
-      "end": 1709984446324,
+      "start": 1709999964451,
+      "end": 1709999964451,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '/assets/images/icons/location.png'\nimport _imports_1 from '/assets/images/icons/phone.png'\nimport _imports_2 from '/assets/images/icons/burger/long-stick.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<header${\n    _ssrRenderAttrs(_mergeProps({ class: \"header\" }, _attrs))\n  } data-v-e784f4ad><div class=\"logo\" data-v-e784f4ad></div><div class=\"container header__container\" data-v-e784f4ad><div class=\"contacts\" data-v-e784f4ad><div class=\"contact\" data-v-e784f4ad><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"\" data-v-e784f4ad><p class=\"headers\" data-v-e784f4ad>Москва</p></div><div class=\"contact\" data-v-e784f4ad><img${\n    _ssrRenderAttr(\"src\", _imports_1)\n  } alt=\"\" data-v-e784f4ad><p class=\"phone\" data-v-e784f4ad>+7 (812) 635 22 77</p></div></div><div class=\"take-order\" data-v-e784f4ad><button class=\"order order_pink\" data-v-e784f4ad>Купить билеты</button><button class=\"order order_green\" data-v-e784f4ad>Заказать праздник</button></div></div><div class=\"menu\" data-v-e784f4ad><img${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } alt=\"\" data-v-e784f4ad><img class=\"short\"${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } alt=\"\" data-v-e784f4ad><img${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } alt=\"\" data-v-e784f4ad><p data-v-e784f4ad>Меню</p></div></header>`)\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue?vue&type=style&index=0&scoped=e784f4ad&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Header.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-e784f4ad\"]])",
-      "start": 1709984446324,
-      "end": 1709984446326,
+      "start": 1709999964451,
+      "end": 1709999964452,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,166 +82,166 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709984446326,
-      "end": 1709984446326,
+      "start": 1709999964452,
+      "end": 1709999964452,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709984446326,
-      "end": 1709984446327,
+      "start": 1709999964452,
+      "end": 1709999964453,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "const _sfc_main = {};\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport _imports_0 from \"/assets/images/icons/location.png\";\nimport _imports_1 from \"/assets/images/icons/phone.png\";\nimport _imports_2 from \"/assets/images/icons/burger/long-stick.png\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<header${_ssrRenderAttrs(_mergeProps({ class: \"header\" }, _attrs))} data-v-e784f4ad><div class=\"logo\" data-v-e784f4ad></div><div class=\"container header__container\" data-v-e784f4ad><div class=\"contacts\" data-v-e784f4ad><div class=\"contact\" data-v-e784f4ad><img${_ssrRenderAttr(\"src\", _imports_0)} alt=\"\" data-v-e784f4ad><p class=\"headers\" data-v-e784f4ad>Москва</p></div><div class=\"contact\" data-v-e784f4ad><img${_ssrRenderAttr(\"src\", _imports_1)} alt=\"\" data-v-e784f4ad><p class=\"phone\" data-v-e784f4ad>+7 (812) 635 22 77</p></div></div><div class=\"take-order\" data-v-e784f4ad><button class=\"order order_pink\" data-v-e784f4ad>Купить билеты</button><button class=\"order order_green\" data-v-e784f4ad>Заказать праздник</button></div></div><div class=\"menu\" data-v-e784f4ad><img${_ssrRenderAttr(\"src\", _imports_2)} alt=\"\" data-v-e784f4ad><img class=\"short\"${_ssrRenderAttr(\"src\", _imports_2)} alt=\"\" data-v-e784f4ad><img${_ssrRenderAttr(\"src\", _imports_2)} alt=\"\" data-v-e784f4ad><p data-v-e784f4ad>Меню</p></div></header>`);\n}\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue?vue&type=style&index=0&scoped=e784f4ad&lang.scss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/Header.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-e784f4ad\"]]);\n",
-      "start": 1709984446327,
-      "end": 1709984446375,
+      "start": 1709999964453,
+      "end": 1709999964492,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue\"],\n  \"sourcesContent\": [\"const _sfc_main = {}\\nimport { mergeProps as _mergeProps } from \\\"vue\\\"\\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\"\\nimport _imports_0 from '/assets/images/icons/location.png'\\nimport _imports_1 from '/assets/images/icons/phone.png'\\nimport _imports_2 from '/assets/images/icons/burger/long-stick.png'\\n\\n\\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\\n  _push(`<header${\\n    _ssrRenderAttrs(_mergeProps({ class: \\\"header\\\" }, _attrs))\\n  } data-v-e784f4ad><div class=\\\"logo\\\" data-v-e784f4ad></div><div class=\\\"container header__container\\\" data-v-e784f4ad><div class=\\\"contacts\\\" data-v-e784f4ad><div class=\\\"contact\\\" data-v-e784f4ad><img${\\n    _ssrRenderAttr(\\\"src\\\", _imports_0)\\n  } alt=\\\"\\\" data-v-e784f4ad><p class=\\\"headers\\\" data-v-e784f4ad>Москва</p></div><div class=\\\"contact\\\" data-v-e784f4ad><img${\\n    _ssrRenderAttr(\\\"src\\\", _imports_1)\\n  } alt=\\\"\\\" data-v-e784f4ad><p class=\\\"phone\\\" data-v-e784f4ad>+7 (812) 635 22 77</p></div></div><div class=\\\"take-order\\\" data-v-e784f4ad><button class=\\\"order order_pink\\\" data-v-e784f4ad>Купить билеты</button><button class=\\\"order order_green\\\" data-v-e784f4ad>Заказать праздник</button></div></div><div class=\\\"menu\\\" data-v-e784f4ad><img${\\n    _ssrRenderAttr(\\\"src\\\", _imports_2)\\n  } alt=\\\"\\\" data-v-e784f4ad><img class=\\\"short\\\"${\\n    _ssrRenderAttr(\\\"src\\\", _imports_2)\\n  } alt=\\\"\\\" data-v-e784f4ad><img${\\n    _ssrRenderAttr(\\\"src\\\", _imports_2)\\n  } alt=\\\"\\\" data-v-e784f4ad><p data-v-e784f4ad>Меню</p></div></header>`)\\n}\\n\\nimport \\\"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Header.vue?vue&type=style&index=0&scoped=e784f4ad&lang.scss\\\"\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"components/Header.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nimport _export_sfc from '\\u0000plugin-vue:export-helper'\\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\\\"data-v-e784f4ad\\\"]])\"],\n  \"mappings\": \"AAAA,MAAM,YAAY,CAAC;AACnB,SAAS,cAAc,mBAAmB;AAC1C,SAAS,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AACnF,OAAO,gBAAgB;AACvB,OAAO,gBAAgB;AACvB,OAAO,gBAAgB;AAGvB,SAAS,eAAe,MAAM,OAAO,SAAS,QAAQ;AACpD,QAAM,UACJ,gBAAgB,YAAY,EAAE,OAAO,SAAS,GAAG,MAAM,CAAC,CAC1D,oMACE,eAAe,OAAO,UAAU,CAClC,uHACE,eAAe,OAAO,UAAU,CAClC,2UACE,eAAe,OAAO,UAAU,CAClC,6CACE,eAAe,OAAO,UAAU,CAClC,+BACE,eAAe,OAAO,UAAU,CAClC,oEAAoE;AACtE;AAEA,OAAO;AAEP,SAAS,iBAAiB,4BAA4B;AACtD,MAAM,aAAa,UAAU;AAC7B,UAAU,QAAQ,CAAC,OAAO,QAAQ;AAChC,QAAM,aAAa,qBAAqB;AACvC,GAAC,WAAW,YAAY,WAAW,UAAU,oBAAI,IAAI,IAAI,IAAI,uBAAuB;AACrF,SAAO,aAAa,WAAW,OAAO,GAAG,IAAI;AAC/C;AACA,OAAO,iBAAiB;AACxB,eAA4B,4BAAY,WAAW,CAAC,CAAC,aAAY,cAAc,GAAE,CAAC,aAAY,iBAAiB,CAAC,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709984446375,
-      "end": 1709984446375,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709984446375,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709984446375,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964492,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964492,
+      "end": 1709999964493,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709984446376,
-      "end": 1709984446376,
+      "start": 1709999964493,
+      "end": 1709999964493,
       "order": "normal"
     }
   ]
