@@ -16,4 +16,9 @@ html {
 .container {
   margin: 0 auto;
   max-width: 1216px;
+
+  @media (max-width: 1230px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

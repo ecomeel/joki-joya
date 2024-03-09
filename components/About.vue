@@ -19,9 +19,11 @@ export default {
     margin-top: 140px;
     display: flex;
     column-gap: 100px;
+    max-width: 100%;
 
     &__content-wrapper {
       flex: 1 0 auto;
+      max-width: 1040px;
     }
   }
 </style>
