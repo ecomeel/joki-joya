@@ -39,11 +39,10 @@
           дни рождения, выпускные детского сада или школы, Новый Год,
           корпоративные праздники.
         </p>
-        <div class="address-btn__wrapper">
-          <div class="address-btn">
-            <a href="">Посмотреть адреса</a>
-            <img src="/assets/images/icons/Arrow.png" alt="" />
-          </div>
+        <div class="button-wrapper">
+          <ButtonArrow
+            text="Посмотреть адреса"
+          />
         </div>
       </div>
     </div>
@@ -132,23 +131,6 @@
     & strong {
       font-weight: bold;
     }
-  }
-}
-.address-btn {
-  padding: 12px 17px;
-  border-radius: 48px;
-  border: 2px solid #000;
-  display: inline-block;
-  & a {
-    font-family: "DrukCyr";
-    font-size: 22px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  & img {
-    margin-left: 13px;
-    width: 32px;
   }
 }
 </style>

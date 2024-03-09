@@ -4,44 +4,44 @@
     {
       "name": "vite:vue",
       "result": "\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n  & > *:not(:last-child) {\n    margin-right: 19px;\n  }\n  & > * {\n    width: 55px;\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n}\n",
-      "start": 1709930538163,
-      "end": 1709930538163
+      "start": 1709984446131,
+      "end": 1709984446131
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709930538163,
-      "end": 1709930538163,
+      "start": 1709984446131,
+      "end": 1709984446131,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709930538163,
-      "end": 1709930538163,
+      "start": 1709984446131,
+      "end": 1709984446131,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709930538163,
-      "end": 1709930538163,
+      "start": 1709984446131,
+      "end": 1709984446131,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709930538163,
-      "end": 1709930538163,
+      "start": 1709984446131,
+      "end": 1709984446131,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709930538163,
-      "end": 1709930538163,
+      "start": 1709984446131,
+      "end": 1709984446131,
       "order": "pre"
     },
     {
       "name": "vite:css",
       "result": ".cover-list{max-width:100%}.cover-list__picture{border-radius:32px;display:block;height:616px;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}.title-wrapper{align-items:center;display:flex;margin-top:40px;position:relative}.title{font-family:DrukWideCyr,sans-serif;font-size:73px;line-height:72px;text-transform:uppercase}.title_blue{color:#0267ff;position:relative;z-index:2}.title_blue:before{color:transparent;content:\"JOKI JOYA\";left:10px;position:absolute;top:15px;width:100%;z-index:-1;-webkit-text-stroke:3px #abec20}.stars{margin-left:27px}.stars>:not(:last-child){margin-right:19px}.stars>*{width:55px}.welcome{height:144px;position:absolute;right:0;top:-8px;width:144px}",
-      "start": 1709930538163,
-      "end": 1709930538198,
+      "start": 1709984446131,
+      "end": 1709984446174,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -58,27 +58,27 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1709930538198,
-      "end": 1709930538198,
+      "start": 1709984446174,
+      "end": 1709984446174,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709930538198,
-      "end": 1709930538198,
+      "start": 1709984446174,
+      "end": 1709984446174,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709930538198,
-      "end": 1709930538198,
+      "start": 1709984446174,
+      "end": 1709984446174,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": ".cover-list[data-v-24f9534e]{max-width:100%}.cover-list__picture[data-v-24f9534e]{border-radius:32px;display:block;height:616px;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}.title-wrapper[data-v-24f9534e]{align-items:center;display:flex;margin-top:40px;position:relative}.title[data-v-24f9534e]{font-family:DrukWideCyr,sans-serif;font-size:73px;line-height:72px;text-transform:uppercase}.title_blue[data-v-24f9534e]{color:#0267ff;position:relative;z-index:2}.title_blue[data-v-24f9534e]:before{color:transparent;content:\"JOKI JOYA\";left:10px;position:absolute;top:15px;width:100%;z-index:-1;-webkit-text-stroke:3px #abec20}.stars[data-v-24f9534e]{margin-left:27px}.stars[data-v-24f9534e]>:not(:last-child){margin-right:19px}.stars>*[data-v-24f9534e]{width:55px}.welcome[data-v-24f9534e]{height:144px;position:absolute;right:0;top:-8px;width:144px}",
-      "start": 1709930538199,
-      "end": 1709930538200,
+      "start": 1709984446177,
+      "end": 1709984446178,
       "order": "normal",
       "sourcemaps": {
         "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue",
@@ -95,63 +95,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446178,
+      "end": 1709984446178,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709930538200,
-      "end": 1709930538200,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "export default \".cover-list[data-v-24f9534e]{max-width:100%}.cover-list__picture[data-v-24f9534e]{border-radius:32px;display:block;height:616px;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}.title-wrapper[data-v-24f9534e]{align-items:center;display:flex;margin-top:40px;position:relative}.title[data-v-24f9534e]{font-family:DrukWideCyr,sans-serif;font-size:73px;line-height:72px;text-transform:uppercase}.title_blue[data-v-24f9534e]{color:#0267ff;position:relative;z-index:2}.title_blue[data-v-24f9534e]:before{color:transparent;content:\\\"JOKI JOYA\\\";left:10px;position:absolute;top:15px;width:100%;z-index:-1;-webkit-text-stroke:3px #abec20}.stars[data-v-24f9534e]{margin-left:27px}.stars[data-v-24f9534e]>:not(:last-child){margin-right:19px}.stars>*[data-v-24f9534e]{width:55px}.welcome[data-v-24f9534e]{height:144px;position:absolute;right:0;top:-8px;width:144px}\"",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -159,104 +159,104 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446179,
+      "end": 1709984446179,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446180,
+      "end": 1709984446180,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446180,
+      "end": 1709984446180,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446180,
+      "end": 1709984446180,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709930538201,
-      "end": 1709930538201,
+      "start": 1709984446180,
+      "end": 1709984446180,
       "order": "normal"
     }
   ]

@@ -1,14 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default {
-  head: {
-    title: "Joki Joya",
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    ],
+export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      title: "Joki Joya",
+    },
   },
-  // buildDir: "docs",
+  buildDir: "docs",
   target: "static",
   devtools: { enabled: true },
   css: [{ src: "/assets/styles/commons.scss", lang: "scss" }],
-};
+});
