@@ -3,70 +3,70 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<script setup>\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n</script>\n<template>\n  <section class=\"facts\">\n    <h3 class=\"facts__title\">jj \\\\\\ facts</h3>\n\n    <Fact\n      v-for=\"fact in facts\"\n      :title=\"fact.title\"\n      :description=\"fact.description\"\n      :background=\"fact.background\"\n      :picture=\"fact.picture\"\n      :buttonText=\"fact.buttonText\"\n      :theme=\"fact.theme\"\n    />\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.facts {\n  margin-top: 110px;\n  // width: 1040px;\n  display: flex;\n  flex-wrap: wrap;\n  position: relative;\n\n  &__title {\n    font-family: 'DrukWideCyr', sans-serif;\n    font-size: 11px;\n    line-height: 16px;\n    text-transform: uppercase;\n    position: absolute;\n    top: 2px;\n    left: -25px;\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n  }\n}\n</style>\n",
-      "start": 1710017374739,
-      "end": 1710017374793,
+      "result": "<script setup>\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n</script>\n<template>\n  <section class=\"facts\">\n    <h3 class=\"facts__title\">jj \\\\\\ facts</h3>\n\n    <Fact\n      v-for=\"fact in facts\"\n      :title=\"fact.title\"\n      :description=\"fact.description\"\n      :background=\"fact.background\"\n      :picture=\"fact.picture\"\n      :buttonText=\"fact.buttonText\"\n      :theme=\"fact.theme\"\n    />\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.facts {\n  margin-top: 110px;\n  display: flex;\n  flex-wrap: wrap;\n  position: relative;\n  max-width: 100%;\n\n  @media (max-width: 768px) {\n    margin-top: 70px;\n  }\n\n  & > * {\n    flex: 0 1 33%;\n\n    @media (max-width: 1024px) {\n      flex: 0 1 50%;\n    }\n    @media (max-width: 768px) {\n      flex: 0 1 100%;\n    }\n  }\n\n  &__title {\n    font-family: \"DrukWideCyr\", sans-serif;\n    font-size: 11px;\n    line-height: 16px;\n    text-transform: uppercase;\n    position: absolute;\n    top: 2px;\n    left: -25px;\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n\n    @media (max-width: 440px) {\n      display: none;\n    }\n  }\n}\n</style>\n",
+      "start": 1710105334668,
+      "end": 1710105334756,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1710017374793,
-      "end": 1710017374793,
+      "start": 1710105334756,
+      "end": 1710105334756,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "import { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\n\nconst _sfc_main = {\n  __name: 'AboutFacts',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_Fact = _resolveComponent(\"Fact\")\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"facts\" }, _attrs))} data-v-20862973><h3 class=\"facts__title\" data-v-20862973>jj \\\\\\\\\\\\ facts</h3><!--[-->`)\n  _ssrRenderList(facts, (fact) => {\n    _push(_ssrRenderComponent(_component_Fact, {\n      title: fact.title,\n      description: fact.description,\n      background: fact.background,\n      picture: fact.picture,\n      buttonText: fact.buttonText,\n      theme: fact.theme\n    }, null, _parent))\n  })\n  _push(`<!--]--></section>`)\n}\n}\n\n}\n\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue?vue&type=style&index=0&scoped=20862973&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AboutFacts.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-20862973\"]])",
-      "start": 1710017374793,
-      "end": 1710017374794,
+      "result": "import { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\n\nconst _sfc_main = {\n  __name: 'AboutFacts',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_Fact = _resolveComponent(\"Fact\")\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"facts\" }, _attrs))} data-v-c1ddac0d><h3 class=\"facts__title\" data-v-c1ddac0d>jj \\\\\\\\\\\\ facts</h3><!--[-->`)\n  _ssrRenderList(facts, (fact) => {\n    _push(_ssrRenderComponent(_component_Fact, {\n      title: fact.title,\n      description: fact.description,\n      background: fact.background,\n      picture: fact.picture,\n      buttonText: fact.buttonText,\n      theme: fact.theme\n    }, null, _parent))\n  })\n  _push(`<!--]--></section>`)\n}\n}\n\n}\n\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue?vue&type=style&index=0&scoped=c1ddac0d&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AboutFacts.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-c1ddac0d\"]])",
+      "start": 1710105334756,
+      "end": 1710105334758,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -74,7 +74,7 @@
           "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue"
         ],
         "sourcesContent": [
-          "<script setup>\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n</script>\n<template>\n  <section class=\"facts\">\n    <h3 class=\"facts__title\">jj \\\\\\ facts</h3>\n\n    <Fact\n      v-for=\"fact in facts\"\n      :title=\"fact.title\"\n      :description=\"fact.description\"\n      :background=\"fact.background\"\n      :picture=\"fact.picture\"\n      :buttonText=\"fact.buttonText\"\n      :theme=\"fact.theme\"\n    />\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.facts {\n  margin-top: 110px;\n  // width: 1040px;\n  display: flex;\n  flex-wrap: wrap;\n  position: relative;\n\n  &__title {\n    font-family: 'DrukWideCyr', sans-serif;\n    font-size: 11px;\n    line-height: 16px;\n    text-transform: uppercase;\n    position: absolute;\n    top: 2px;\n    left: -25px;\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n  }\n}\n</style>\n"
+          "<script setup>\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n</script>\n<template>\n  <section class=\"facts\">\n    <h3 class=\"facts__title\">jj \\\\\\ facts</h3>\n\n    <Fact\n      v-for=\"fact in facts\"\n      :title=\"fact.title\"\n      :description=\"fact.description\"\n      :background=\"fact.background\"\n      :picture=\"fact.picture\"\n      :buttonText=\"fact.buttonText\"\n      :theme=\"fact.theme\"\n    />\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.facts {\n  margin-top: 110px;\n  display: flex;\n  flex-wrap: wrap;\n  position: relative;\n  max-width: 100%;\n\n  @media (max-width: 768px) {\n    margin-top: 70px;\n  }\n\n  & > * {\n    flex: 0 1 33%;\n\n    @media (max-width: 1024px) {\n      flex: 0 1 50%;\n    }\n    @media (max-width: 768px) {\n      flex: 0 1 100%;\n    }\n  }\n\n  &__title {\n    font-family: \"DrukWideCyr\", sans-serif;\n    font-size: 11px;\n    line-height: 16px;\n    text-transform: uppercase;\n    position: absolute;\n    top: 2px;\n    left: -25px;\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n\n    @media (max-width: 440px) {\n      display: none;\n    }\n  }\n}\n</style>\n"
         ],
         "names": [],
         "mappings": ";;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;AAP7B;AAQd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC;;;;;;;;;;;;;;;;;;;;"
@@ -82,147 +82,147 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374794,
-      "end": 1710017374794,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1710017374794,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334758,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334758,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1710017374795,
-      "end": 1710017374795,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Fact.vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\n\nconst _sfc_main = {\n  __name: 'AboutFacts',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_Fact = __nuxt_component_0\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"facts\" }, _attrs))} data-v-20862973><h3 class=\"facts__title\" data-v-20862973>jj \\\\\\\\\\\\ facts</h3><!--[-->`)\n  _ssrRenderList(facts, (fact) => {\n    _push(_ssrRenderComponent(_component_Fact, {\n      title: fact.title,\n      description: fact.description,\n      background: fact.background,\n      picture: fact.picture,\n      buttonText: fact.buttonText,\n      theme: fact.theme\n    }, null, _parent))\n  })\n  _push(`<!--]--></section>`)\n}\n}\n\n}\n\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue?vue&type=style&index=0&scoped=20862973&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AboutFacts.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-20862973\"]])",
-      "start": 1710017374795,
-      "end": 1710017374796,
+      "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Fact.vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport castleImg from \"/images/facts/castle.png\";\nimport parkImg from \"/images/facts/park.png\";\nimport keyImg from \"/images/facts/key.png\";\nimport burgerImg from \"/images/facts/burger.png\";\nimport restaurantImg from \"/images/facts/restaurant.png\";\nimport candyHouseImg from \"/images/facts/candy-house.png\";\nimport boyImg from \"/images/facts/boy.png\";\n\nconst _sfc_main = {\n  __name: 'AboutFacts',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst facts = [\n  {\n    title: \"26\",\n    description: \"парков\",\n    background: \"#ABEC20\",\n    picture: castleImg,\n    buttonText: \"посмтреть адреса\",\n  },\n  {\n    title: \"800+\",\n    description: \"аттракционов\",\n    background: \"#0267FF\",\n    picture: parkImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"200+\",\n    description: \"банкетных комнат\",\n    background: \"#F55E1D\",\n    picture: keyImg,\n    buttonText: \"во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"Семейные\",\n    description: \"рестораны\",\n    background: \"#F269AF\",\n    picture: burgerImg,\n    buttonText: \"Во всех парках\",\n    theme: \"white\",\n  },\n  {\n    title: \"11\",\n    description: \"премиальных ресторанов Family villa\",\n    background: \"#000000\",\n    picture: restaurantImg,\n    buttonText: \"подробнее\",\n    theme: \"white\",\n  },\n  {\n    title: \"Праздники\",\n    description: \"и мастер-классы\",\n    background: \"#A66EFF\",\n    picture: candyHouseImg,\n    buttonText: \"купить билеты\",\n    theme: \"white\",\n  },\n  {\n    title: \"300+\",\n    description: \"аниматоров квестов и шоу программ\",\n    background: \"#ABEC20\",\n    picture: boyImg,\n    buttonText: \"подробнее\",\n  },\n];\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_Fact = __nuxt_component_0\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"facts\" }, _attrs))} data-v-c1ddac0d><h3 class=\"facts__title\" data-v-c1ddac0d>jj \\\\\\\\\\\\ facts</h3><!--[-->`)\n  _ssrRenderList(facts, (fact) => {\n    _push(_ssrRenderComponent(_component_Fact, {\n      title: fact.title,\n      description: fact.description,\n      background: fact.background,\n      picture: fact.picture,\n      buttonText: fact.buttonText,\n      theme: fact.theme\n    }, null, _parent))\n  })\n  _push(`<!--]--></section>`)\n}\n}\n\n}\n\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue?vue&type=style&index=0&scoped=c1ddac0d&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AboutFacts.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-c1ddac0d\"]])",
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -235,20 +235,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1710017374796,
-      "end": 1710017374796,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1710017374796,
-      "end": 1710017374796,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1710017374796,
-      "end": 1710017374796,
+      "start": 1710105334759,
+      "end": 1710105334759,
       "order": "normal"
     }
   ]

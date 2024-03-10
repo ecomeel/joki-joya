@@ -3,70 +3,70 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n",
-      "start": 1710017374679,
-      "end": 1710017374694,
+      "result": "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n\n    @media (max-width: 1230px) {\n      margin-right: 0;\n    }\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n",
+      "start": 1710105334641,
+      "end": 1710105334651,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1710017374694,
-      "end": 1710017374694,
+      "start": 1710105334651,
+      "end": 1710105334651,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\nimport _imports_0 from '/assets/images/main-board.png'\nimport _imports_1 from '/assets/images/star.png'\nimport _imports_2 from '/assets/images/welcome.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<section${\n    _ssrRenderAttrs(_mergeProps({ class: \"cover-list\" }, _attrs))\n  } data-v-05573313><img class=\"cover-list__picture\"${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"cover list\" data-v-05573313><div class=\"title-wrapper\" data-v-05573313><div class=\"flex-wrapper\" data-v-05573313><h1 class=\"title\" data-v-05573313>О <span class=\"title_blue\" data-v-05573313>Joki joya</span></h1><div class=\"stars\" data-v-05573313><!--[-->`)\n  _ssrRenderList(3, (n) => {\n    _push(`<img class=\"star\"${_ssrRenderAttr(\"src\", _imports_1)} alt=\"star\" data-v-05573313>`)\n  })\n  _push(`<!--]--></div></div><img class=\"welcome\"${_ssrRenderAttr(\"src\", _imports_2)} alt=\"Welcome\" data-v-05573313></div></section>`)\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue?vue&type=style&index=0&scoped=05573313&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/CoverList.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-05573313\"]])",
-      "start": 1710017374694,
-      "end": 1710017374695,
+      "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\nimport _imports_0 from '/assets/images/main-board.png'\nimport _imports_1 from '/assets/images/star.png'\nimport _imports_2 from '/assets/images/welcome.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<section${\n    _ssrRenderAttrs(_mergeProps({ class: \"cover-list\" }, _attrs))\n  } data-v-a8db52f4><img class=\"cover-list__picture\"${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"cover list\" data-v-a8db52f4><div class=\"title-wrapper\" data-v-a8db52f4><div class=\"flex-wrapper\" data-v-a8db52f4><h1 class=\"title\" data-v-a8db52f4>О <span class=\"title_blue\" data-v-a8db52f4>Joki joya</span></h1><div class=\"stars\" data-v-a8db52f4><!--[-->`)\n  _ssrRenderList(3, (n) => {\n    _push(`<img class=\"star\"${_ssrRenderAttr(\"src\", _imports_1)} alt=\"star\" data-v-a8db52f4>`)\n  })\n  _push(`<!--]--></div></div><img class=\"welcome\"${_ssrRenderAttr(\"src\", _imports_2)} alt=\"Welcome\" data-v-a8db52f4></div></section>`)\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue?vue&type=style&index=0&scoped=a8db52f4&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/CoverList.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-a8db52f4\"]])",
+      "start": 1710105334651,
+      "end": 1710105334654,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -76,170 +76,170 @@
         "names": [],
         "mappings": ";;OAIM,UAAmC;OAU7B,UAA6B;OAKd,UAAgC;;;;EAnB3D;IAAA,gBAAA,cACW,KAAK,EAAC,YAAY,IAD7B;;IAAA,eAIM,KAAmC,EAAnC,UAAmC;;EAJzC,eAawB,CAAC,EAbzB,CAamB,CAAC;IAbpB,0BAAA,eAcY,KAA6B,EAA7B,UAA6B;;EAdzC,iDAAA,eAmB2B,KAAgC,EAAhC,UAAgC",
         "sourcesContent": [
-          "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n"
+          "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n\n    @media (max-width: 1230px) {\n      margin-right: 0;\n    }\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n"
         ]
       }
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1710017374695,
-      "end": 1710017374695,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334654,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334654,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017374696,
-      "end": 1710017374696,
+      "start": 1710105334655,
+      "end": 1710105334655,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017374696,
-      "end": 1710017374697,
+      "start": 1710105334655,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017374696,
-      "end": 1710017374697,
+      "start": 1710105334655,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1710017374697,
-      "end": 1710017374697,
+      "start": 1710105334656,
+      "end": 1710105334656,
       "order": "normal"
     }
   ]

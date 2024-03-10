@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n",
-      "start": 1710017373882,
-      "end": 1710017373912,
+      "result": "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n\n    @media (max-width: 1230px) {\n      margin-right: 0;\n    }\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n",
+      "start": 1710105333806,
+      "end": 1710105333846,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/assets/images/main-board.png'\nimport _imports_1 from '/assets/images/star.png'\nimport _imports_2 from '/assets/images/welcome.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-05573313\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"cover-list\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  class: \"cover-list__picture\",\n  src: _imports_0,\n  alt: \"cover list\"\n}, null, -1))\nconst _hoisted_3 = { class: \"title-wrapper\" }\nconst _hoisted_4 = { class: \"flex-wrapper\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", { class: \"title\" }, [\n  /*#__PURE__*/_createTextVNode(\"О \"),\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"title_blue\" }, \"Joki joya\")\n], -1))\nconst _hoisted_6 = { class: \"stars\" }\nconst _hoisted_7 = {\n  class: \"star\",\n  src: _imports_1,\n  alt: \"star\"\n}\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  class: \"welcome\",\n  src: _imports_2,\n  alt: \"Welcome\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createElementVNode(\"div\", _hoisted_6, [\n          (_openBlock(), _createElementBlock(_Fragment, null, _renderList(3, (n) => {\n            return _createElementVNode(\"img\", _hoisted_7)\n          }), 64))\n        ])\n      ]),\n      _hoisted_8\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue?vue&type=style&index=0&scoped=05573313&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-05573313\"]])",
-      "start": 1710017373912,
-      "end": 1710017373913,
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/assets/images/main-board.png'\nimport _imports_1 from '/assets/images/star.png'\nimport _imports_2 from '/assets/images/welcome.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a8db52f4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"cover-list\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  class: \"cover-list__picture\",\n  src: _imports_0,\n  alt: \"cover list\"\n}, null, -1))\nconst _hoisted_3 = { class: \"title-wrapper\" }\nconst _hoisted_4 = { class: \"flex-wrapper\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", { class: \"title\" }, [\n  /*#__PURE__*/_createTextVNode(\"О \"),\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"title_blue\" }, \"Joki joya\")\n], -1))\nconst _hoisted_6 = { class: \"stars\" }\nconst _hoisted_7 = {\n  class: \"star\",\n  src: _imports_1,\n  alt: \"star\"\n}\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  class: \"welcome\",\n  src: _imports_2,\n  alt: \"Welcome\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createElementVNode(\"div\", _hoisted_6, [\n          (_openBlock(), _createElementBlock(_Fragment, null, _renderList(3, (n) => {\n            return _createElementVNode(\"img\", _hoisted_7)\n          }), 64))\n        ])\n      ]),\n      _hoisted_8\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue?vue&type=style&index=0&scoped=a8db52f4&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-a8db52f4\"]])",
+      "start": 1710105333846,
+      "end": 1710105333847,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,140 +62,140 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333847,
+      "end": 1710105333847,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333847,
+      "end": 1710105333847,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333847,
+      "end": 1710105333847,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333847,
+      "end": 1710105333847,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333847,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017373913,
-      "end": 1710017373913,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017373913,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1710017373914,
-      "end": 1710017373914,
+      "start": 1710105333848,
+      "end": 1710105333848,
       "order": "normal"
     }
   ]

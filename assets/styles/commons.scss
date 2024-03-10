@@ -22,3 +22,13 @@ html {
     padding-right: 16px;
   }
 }
+a,
+button {
+  transition: transform linear 0.3s;
+}
+a:hover {
+  transform: scale(1.1);
+}
+button:hover {
+  transform: scale(1.1);
+}

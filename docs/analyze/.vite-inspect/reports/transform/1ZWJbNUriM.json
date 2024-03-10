@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<script>\nexport default {\n  setup() {\n\n  }\n}\n</script>\n<template>\n  <section class=\"about\">\n    <Vertical />\n    <div class=\"about__content-wrapper\">\n      <AboutInfo />\n      <AboutFacts />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n  .about {\n    margin-top: 140px;\n    display: flex;\n    column-gap: 100px;\n    width: 100%;\n\n    &__content-wrapper {\n      flex: 1 0 auto;\n      max-width: 1040px;\n    }\n  }\n</style>",
-      "start": 1710017373882,
-      "end": 1710017373909,
+      "result": "<script></script>\n<template>\n  <section class=\"about\">\n    <Vertical />\n    <div class=\"about__content-wrapper\">\n      <AboutInfo />\n      <AboutFacts />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.about {\n  margin-top: 140px;\n  display: flex;\n  column-gap: 100px;\n  max-width: 100%;\n\n  @media (max-width: 768px) {\n    margin-top: 80px;\n    column-gap: 50px;\n  }\n  @media (max-width: 525px) {\n    column-gap: 35px;\n  }\n\n  &__content-wrapper {\n    max-width: 80%;\n  }\n}\n</style>\n",
+      "start": 1710105333806,
+      "end": 1710105333845,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1710017373910,
-      "end": 1710017373910,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\nconst _sfc_main = {\n  setup() {\n\n  }\n}\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a13ec932\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"about\" }\nconst _hoisted_2 = { class: \"about__content-wrapper\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Vertical = _resolveComponent(\"Vertical\")\n  const _component_AboutInfo = _resolveComponent(\"AboutInfo\")\n  const _component_AboutFacts = _resolveComponent(\"AboutFacts\")\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_component_Vertical),\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_AboutInfo),\n      _createVNode(_component_AboutFacts)\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/About.vue?vue&type=style&index=0&scoped=a13ec932&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-a13ec932\"]])",
-      "start": 1710017373910,
-      "end": 1710017373911,
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-57cca95e\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"about\" }\nconst _hoisted_2 = { class: \"about__content-wrapper\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Vertical = _resolveComponent(\"Vertical\")\n  const _component_AboutInfo = _resolveComponent(\"AboutInfo\")\n  const _component_AboutFacts = _resolveComponent(\"AboutFacts\")\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_component_Vertical),\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_AboutInfo),\n      _createVNode(_component_AboutFacts)\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/About.vue?vue&type=style&index=0&scoped=57cca95e&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-57cca95e\"]])",
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,141 +62,141 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333845,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333845,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1710017373911,
-      "end": 1710017373911,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue\";\n\nconst _sfc_main = {\n  setup() {\n\n  }\n}\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a13ec932\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"about\" }\nconst _hoisted_2 = { class: \"about__content-wrapper\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Vertical = __nuxt_component_0\n  const _component_AboutInfo = __nuxt_component_1\n  const _component_AboutFacts = __nuxt_component_2\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_component_Vertical),\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_AboutInfo),\n      _createVNode(_component_AboutFacts)\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/About.vue?vue&type=style&index=0&scoped=a13ec932&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-a13ec932\"]])",
-      "start": 1710017373911,
-      "end": 1710017373912,
+      "result": "import { default as __nuxt_component_0 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/Vertical.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutInfo.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/AboutFacts.vue\";\nconst _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-57cca95e\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"about\" }\nconst _hoisted_2 = { class: \"about__content-wrapper\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Vertical = __nuxt_component_0\n  const _component_AboutInfo = __nuxt_component_1\n  const _component_AboutFacts = __nuxt_component_2\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_component_Vertical),\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_AboutInfo),\n      _createVNode(_component_AboutFacts)\n    ])\n  ]))\n}\n\nimport \"/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/About.vue?vue&type=style&index=0&scoped=57cca95e&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-57cca95e\"]])",
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1710017373912,
-      "end": 1710017373912,
+      "start": 1710105333846,
+      "end": 1710105333846,
       "order": "normal"
     }
   ]

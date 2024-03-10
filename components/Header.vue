@@ -141,6 +141,7 @@
   position: absolute;
   top: 15px;
   right: 16px;
+  cursor: pointer;
   & img {
     height: 4px;
   }

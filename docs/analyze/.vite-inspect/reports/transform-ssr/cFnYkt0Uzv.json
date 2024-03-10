@@ -1,0 +1,276 @@
+{
+  "resolvedId": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue?vue&type=style&index=0&scoped=a8db52f4&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n\n    @media (max-width: 1230px) {\n      margin-right: 0;\n    }\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n",
+      "start": 1710105334668,
+      "end": 1710105334668,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <section class=\"cover-list\">\n    <img\n      class=\"cover-list__picture\"\n      src=\"/assets/images/main-board.png\"\n      alt=\"cover list\"\n    />\n    <div class=\"title-wrapper\">\n      <div class=\"flex-wrapper\">\n        <h1 class=\"title\">О <span class=\"title_blue\">Joki joya</span></h1>\n        <div class=\"stars\">\n          <img\n            class=\"star\"\n            v-for=\"n in 3\"\n            src=\"/assets/images/star.png\"\n            alt=\"star\"\n          />\n        </div>\n      </div>\n      <img class=\"welcome\" src=\"/assets/images/welcome.png\" alt=\"Welcome\" />\n    </div>\n  </section>\n</template>\n<style lang=\"scss\" scoped>\n.cover-list {\n  max-width: 100%;\n\n  &__picture {\n    display: block;\n    width: 100%;\n    height: 616px;\n    object-fit: cover;\n    object-position: center center;\n    border-radius: 32px;\n\n    @media (max-width: 1230px) {\n      object-position: 10%;\n    }\n  }\n}\n.title-wrapper {\n  margin-top: 40px;\n  position: relative;\n\n  @media (max-width: 1024px) {\n    margin-top: 32px;\n  }\n}\n.flex-wrapper {\n  display: flex;\n  align-items: center;\n\n  @media (max-width: 525px) {\n    justify-content: center;\n  }\n}\n.title {\n  font-family: \"DrukWideCyr\", sans-serif;\n  font-size: 73px;\n  line-height: 72px;\n  text-transform: uppercase;\n\n  @media (max-width: 1024px) {\n    font-size: 50px;\n    line-height: 50px;\n  }\n  @media (max-width: 768px) {\n    font-size: 32px;\n    line-height: 32px;\n  }\n\n  &_blue {\n    color: #0267ff;\n    position: relative;\n    z-index: 2;\n\n    &::before {\n      content: \"JOKI JOYA\";\n      position: absolute;\n      top: 15px;\n      left: 10px;\n      z-index: -1;\n      width: 100%;\n      color: transparent;\n      -webkit-text-stroke: 3px #abec20;\n\n      @media (max-width: 1024px) {\n        top: 10px;\n        left: 7px;\n        -webkit-text-stroke: 2px #abec20;\n      }\n      @media (max-width: 1024px) {\n        top: 6px;\n        left: 5px;\n      }\n    }\n  }\n}\n.stars {\n  margin-left: 27px;\n\n  @media (max-width: 1024px) {\n    margin-left: 15px;\n  }\n  & > *:not(:last-child) {\n    margin-right: 19px;\n\n    @media (max-width: 1230px) {\n      margin-right: 0;\n    }\n  }\n  & > *:not(:first-child) {\n    @media (max-width: 1230px) {\n      display: none;\n    }\n  }\n  & > * {\n    width: 55px;\n\n    @media (max-width: 1024px) {\n      width: 40px;\n    }\n    @media (max-width: 768px) {\n      width: 24px;\n    }\n  }\n}\n.welcome {\n  position: absolute;\n  top: -8px;\n  right: 0;\n  width: 144px;\n  height: 144px;\n\n  @media (max-width: 525px) {\n    margin-top: 50px;\n    position: static;\n    display: block;\n  }\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710105334669,
+      "end": 1710105334669,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710105334669,
+      "end": 1710105334669,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710105334669,
+      "end": 1710105334669,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710105334669,
+      "end": 1710105334669,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710105334669,
+      "end": 1710105334669,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".cover-list{max-width:100%}.cover-list__picture{border-radius:32px;display:block;height:616px;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}@media (max-width:1230px){.cover-list__picture{-o-object-position:10%;object-position:10%}}.title-wrapper{margin-top:40px;position:relative}@media (max-width:1024px){.title-wrapper{margin-top:32px}}.flex-wrapper{align-items:center;display:flex}@media (max-width:525px){.flex-wrapper{justify-content:center}}.title{font-family:DrukWideCyr,sans-serif;font-size:73px;line-height:72px;text-transform:uppercase}@media (max-width:1024px){.title{font-size:50px;line-height:50px}}@media (max-width:768px){.title{font-size:32px;line-height:32px}}.title_blue{color:#0267ff;position:relative;z-index:2}.title_blue:before{color:transparent;content:\"JOKI JOYA\";left:10px;position:absolute;top:15px;width:100%;z-index:-1;-webkit-text-stroke:3px #abec20}@media (max-width:1024px){.title_blue:before{left:7px;top:10px;-webkit-text-stroke:2px #abec20;left:5px;top:6px}}.stars{margin-left:27px}@media (max-width:1024px){.stars{margin-left:15px}}.stars>:not(:last-child){margin-right:19px}@media (max-width:1230px){.stars>:not(:last-child){margin-right:0}.stars>:not(:first-child){display:none}}.stars>*{width:55px}@media (max-width:1024px){.stars>*{width:40px}}@media (max-width:768px){.stars>*{width:24px}}.welcome{height:144px;position:absolute;right:0;top:-8px;width:144px}@media (max-width:525px){.welcome{display:block;margin-top:50px;position:static}}",
+      "start": 1710105334669,
+      "end": 1710105334681,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue",
+        "mappings": "AACA,YACE,eAEA,qBAME,mBALA,cAEA,aACA,qCACA,+DAHA,WAMA,0BARF,qBASI,4CAIN,eACE,gBACA,kBAEA,0BAJF,eAKI,iBAGJ,cAEE,mBADA,aAGA,yBAJF,cAKI,wBAGJ,OACE,mCACA,eACA,iBACA,yBAEA,0BANF,OAOI,eACA,kBAEF,yBAVF,OAWI,eACA,kBAGF,YACE,cACA,kBACA,UAEA,mBAOE,kBANA,oBAGA,UAFA,kBACA,SAGA,WADA,WAGA,gCAEA,0BAVF,mBAYI,SADA,SAEA,gCAIA,SADA,SAMR,OACE,iBAEA,0BAHF,OAII,kBAEF,yBACE,kBAEA,0BAHF,yBAII,eAGJ,0BAEI,cAGJ,SACE,WAEA,0BAHF,SAII,YAEF,yBANF,SAOI,YAIN,SAKE,aAJA,kBAEA,QADA,SAEA,YAGA,yBAPF,SAUI,cAFA,gBACA",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710105334681,
+      "end": 1710105334681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710105334681,
+      "end": 1710105334681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710105334681,
+      "end": 1710105334681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".cover-list[data-v-a8db52f4]{max-width:100%}.cover-list__picture[data-v-a8db52f4]{border-radius:32px;display:block;height:616px;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}@media (max-width:1230px){.cover-list__picture[data-v-a8db52f4]{-o-object-position:10%;object-position:10%}}.title-wrapper[data-v-a8db52f4]{margin-top:40px;position:relative}@media (max-width:1024px){.title-wrapper[data-v-a8db52f4]{margin-top:32px}}.flex-wrapper[data-v-a8db52f4]{align-items:center;display:flex}@media (max-width:525px){.flex-wrapper[data-v-a8db52f4]{justify-content:center}}.title[data-v-a8db52f4]{font-family:DrukWideCyr,sans-serif;font-size:73px;line-height:72px;text-transform:uppercase}@media (max-width:1024px){.title[data-v-a8db52f4]{font-size:50px;line-height:50px}}@media (max-width:768px){.title[data-v-a8db52f4]{font-size:32px;line-height:32px}}.title_blue[data-v-a8db52f4]{color:#0267ff;position:relative;z-index:2}.title_blue[data-v-a8db52f4]:before{color:transparent;content:\"JOKI JOYA\";left:10px;position:absolute;top:15px;width:100%;z-index:-1;-webkit-text-stroke:3px #abec20}@media (max-width:1024px){.title_blue[data-v-a8db52f4]:before{left:7px;top:10px;-webkit-text-stroke:2px #abec20;left:5px;top:6px}}.stars[data-v-a8db52f4]{margin-left:27px}@media (max-width:1024px){.stars[data-v-a8db52f4]{margin-left:15px}}.stars[data-v-a8db52f4]>:not(:last-child){margin-right:19px}@media (max-width:1230px){.stars[data-v-a8db52f4]>:not(:last-child){margin-right:0}.stars[data-v-a8db52f4]>:not(:first-child){display:none}}.stars>*[data-v-a8db52f4]{width:55px}@media (max-width:1024px){.stars>*[data-v-a8db52f4]{width:40px}}@media (max-width:768px){.stars>*[data-v-a8db52f4]{width:24px}}.welcome[data-v-a8db52f4]{height:144px;position:absolute;right:0;top:-8px;width:144px}@media (max-width:525px){.welcome[data-v-a8db52f4]{display:block;margin-top:50px;position:static}}",
+      "start": 1710105334682,
+      "end": 1710105334683,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue",
+        "mappings": "AAAA,6BAAY,cAAc,CAAC,sCAAqB,kBAAkB,CAAC,aAAa,CAAC,YAAY,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,gCAAgC,CAAC,6BAA6B,CAAC,UAAU,CAAC,0BAA0B,sCAAqB,sBAAsB,CAAC,mBAAmB,CAAC,CAAC,gCAAe,eAAe,CAAC,iBAAiB,CAAC,0BAA0B,gCAAe,eAAe,CAAC,CAAC,+BAAc,kBAAkB,CAAC,YAAY,CAAC,yBAAyB,+BAAc,sBAAsB,CAAC,CAAC,wBAAO,kCAAkC,CAAC,cAAc,CAAC,gBAAgB,CAAC,wBAAwB,CAAC,0BAA0B,wBAAO,cAAc,CAAC,gBAAgB,CAAC,CAAC,yBAAyB,wBAAO,cAAc,CAAC,gBAAgB,CAAC,CAAC,6BAAY,aAAa,CAAC,iBAAiB,CAAC,SAAS,CAAC,oCAAmB,iBAAiB,CAAC,mBAAmB,CAAC,SAAS,CAAC,iBAAiB,CAAC,QAAQ,CAAC,UAAU,CAAC,UAAU,CAAC,+BAA+B,CAAC,0BAA0B,oCAAmB,QAAQ,CAAC,QAAQ,CAAC,+BAA+B,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC,wBAAO,gBAAgB,CAAC,0BAA0B,wBAAO,gBAAgB,CAAC,CAAC,0CAAyB,iBAAiB,CAAC,0BAA0B,0CAAyB,cAAc,CAAC,2CAA0B,YAAY,CAAC,CAAC,0BAAS,UAAU,CAAC,0BAA0B,0BAAS,UAAU,CAAC,CAAC,yBAAyB,0BAAS,UAAU,CAAC,CAAC,0BAAS,YAAY,CAAC,iBAAiB,CAAC,OAAO,CAAC,QAAQ,CAAC,WAAW,CAAC,yBAAyB,0BAAS,aAAa,CAAC,eAAe,CAAC,eAAe,CAAC",
+        "names": [],
+        "sources": [
+          "/Users/alex.pulin/WorkSpace/Web/test/joky-joya/components/CoverList.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710105334683,
+      "end": 1710105334683,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710105334683,
+      "end": 1710105334684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710105334684,
+      "end": 1710105334684,
+      "order": "normal"
+    }
+  ]
+}
